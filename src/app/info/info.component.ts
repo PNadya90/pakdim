@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./info.component.scss']
 })
 export class InfoComponent implements OnInit {
+  items: any = [];
+  constructor(private httpClient: HttpClient) { }
 
-  constructor() { }
+  ngOnInit() {
+    this.httpClient.get('assets/data.json').subscribe(date => this.items=date)
 
-  ngOnInit(): void {
-  }
+}
+
 
 }

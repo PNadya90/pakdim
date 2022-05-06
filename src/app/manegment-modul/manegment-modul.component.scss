@@ -18,7 +18,7 @@
 }
 
 .search {
-    margin: 0px 66px 0px 70px;
+    margin: 0px 66px 25px 70px;
     height: 66px;
     position: relative;
     .icon-search {
@@ -34,6 +34,7 @@
     width: 100%;
     border: none;
     text-indent: 35px;
+    box-shadow: 0px 3px 6px #00000029;
 }
 .search input::placeholder {
     font-style: italic;

@@ -1,20 +1,22 @@
-<div class="list-headers">
-    <div class="rows">
-        <div class="cols1">Color</div>
-        <div class="cols2"><i class="bi bi-arrow-up"></i>Name</div>
-        <div class="cols3">Create Date</div>
-        <div class="cols3">Last Update</div>
-        <div class="cols3">Created by</div>
-    </div>
-</div>
-<div class="items-list">
-    <div class="item">
-        <div class="item-color">
-            <div class="color-icon"></div>
+<div class="info-component-container">
+    <div class="list-headers">
+        <div class="rows">
+            <div class="cols1">Color</div>
+            <div class="cols2"><i class="bi bi-arrow-up"></i>Name</div>
+            <div class="cols3">Create Date</div>
+            <div class="cols3">Last Update</div>
+            <div class="cols3">Created by</div>
         </div>
-        <div class="name">hjk</div>
-        <div class="create-date">ttttttt</div>
-        <div class="udate-date">sdfsf</div>
-        <div class="created-by">dsf</div>
+    </div>
+    <div class="items-list" >
+        <div class="item"  *ngFor="let item of items" >
+            <div class="item-color">
+                <div class="color-icon" [ngStyle]="{'background-color': item.color}"></div>
+            </div>
+            <div class="name">{{item.name}}</div>
+            <div class="create-date">{{item.createDate}}</div>
+            <div class="udate-date">{{item.lastUpdate}}</div>
+            <div class="created-by">{{item.createdBy}}</div>
+        </div>
     </div>
 </div>
