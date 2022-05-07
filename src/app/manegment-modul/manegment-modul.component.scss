@@ -29,14 +29,20 @@
     }
 }
 
-.search input {
+.search-input {
     height: 66px;
     width: 100%;
     border: none;
     text-indent: 35px;
     box-shadow: 0px 3px 6px #00000029;
 }
-.search input::placeholder {
+.search-input::placeholder {
     font-style: italic;
 }
+
+.search-input:focus {
+    outline: none !important;
+    border: 2px solid #007AF9;
+}
+
 

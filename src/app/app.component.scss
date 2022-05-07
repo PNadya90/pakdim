@@ -2,34 +2,45 @@ body {
     height: 100vh;
     width: auto;
     background:  #F2F6F9;
+
+    .pages-header{
+
+    .search-url {
+        width: 529px;
+        height: 43px;
+        border: none;
+        font-style: italic;
+        margin-top: 29px;
+        margin-left: 67px;
+    }
     
-}
+    .search-url:focus {
+        outline: none !important;
+        border: 2px solid #007AF9;
+    }
+    
+    .search-url::placeholder {
+        font-style: italic;
+        text-indent: 3px;
+    }
 
-.search-url {
-    width: 529px;
-    height: 43px;
-    border: none;
-    font-style: italic;
-    margin-top: 29px;
-    margin-left: 67px;
-}
-
-.search-url::placeholder {
-    font-style: italic;
-    text-indent: 3px;
-}
-
-.btn-go {
-    background-color: #007AF9;
-    color: #FFFFFF;
-    border: none;
-    width: 79px;
-    height: 43px;
-    margin-left: 6px;
-    position: relative;
-    top: -2px;
-    font-family:'Helvetica Neue';
+  
+    .btn-go {
+        background-color: #007AF9;
+        color: #FFFFFF;
+        border: none;
+        width: 79px;
+        height: 43px;
+        margin-left: 6px;
+        position: relative;
+        top: -2px;
+        font-family:'Helvetica Neue';
+    }
+   
 }
 .viewer-container{
     height: 650px;
 }
+}
+
+
