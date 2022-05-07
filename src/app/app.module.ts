@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ManegmentModulComponent } from './manegment-modul/manegment-modul.component';
 import { InfoComponent } from './info/info.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DataInfoService } from './data-info.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [DataInfoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

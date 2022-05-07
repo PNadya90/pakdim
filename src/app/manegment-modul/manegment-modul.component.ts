@@ -1,15 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+import { DataInfoService } from '../data-info.service';
 
 @Component({
   selector: 'app-manegment-modul',
   templateUrl: './manegment-modul.component.html',
   styleUrls: ['./manegment-modul.component.scss']
 })
-export class ManegmentModulComponent implements OnInit {
+export class ManegmentModulComponent {
 
-  constructor() { }
+  constructor(private srv: DataInfoService) { }
 
-  ngOnInit(): void {
+  searchInfo(event: any) {
+    console.log(event);
+    if (event && event.target) {
+      this.srv.setInfo(event.target.value)
+    }
   }
+
 
 }
