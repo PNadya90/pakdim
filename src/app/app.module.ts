@@ -7,12 +7,14 @@ import { ManegmentModulComponent } from './manegment-modul/manegment-modul.compo
 import { InfoComponent } from './info/info.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DataInfoService } from './data-info.service';
+import { AddWindowComponent } from './add-window/add-window.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ManegmentModulComponent,
-    InfoComponent
+    InfoComponent,
+    AddWindowComponent
   ],
   imports: [
     BrowserModule,
