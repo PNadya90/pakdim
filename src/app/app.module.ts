@@ -8,13 +8,15 @@ import { InfoComponent } from './info/info.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DataInfoService } from './data-info.service';
 import { AddWindowComponent } from './add-window/add-window.component';
+import { CsDropdownComponent } from './utils/cs-dropdown/cs-dropdown.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ManegmentModulComponent,
     InfoComponent,
-    AddWindowComponent
+    AddWindowComponent,
+    CsDropdownComponent
   ],
   imports: [
     BrowserModule,

@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-window.component.scss']
 })
 export class AddWindowComponent implements OnInit {
-
+ 
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }

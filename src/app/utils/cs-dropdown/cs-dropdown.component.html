@@ -1,0 +1,9 @@
+<button class="btn-drop" [ngClass]="toggle? 'btn-dropped': ''" (click)="drop()">
+    <div class="color-icon">
+    </div>
+    <div class="drop-icon-down" *ngIf="!toggle" >▼</div>
+    <div class="drop-icon-up" *ngIf="toggle">▲</div>
+    <div class="colors-area">
+        <div class="color-cell" *ngFor="let cell of colors" [ngStyle]="{'background-color': cell.value}" ></div>
+    </div>
+</button>
