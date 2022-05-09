@@ -12,12 +12,12 @@
     <input class="search-url" placeholder="URL">
     <button class="btn-go">GO</button>
   </div>
-  <app-manegment-modul></app-manegment-modul>
-  <div class="viewer-container">
+  <app-manegment-modul (onOpenAddWindow)="showWindow() "></app-manegment-modul>
+  <div class="viewer-container" >
     <app-info></app-info>
   </div>
-  <div class="add-area">
-    <app-add-window></app-add-window>
+  <div class="add-area" [@openWindow]="this.isExpanded ? 'expanded' : 'initial'">
+    <app-add-window (onCloseWindow)="hideWindow()"></app-add-window>
   </div>
  
 </body>

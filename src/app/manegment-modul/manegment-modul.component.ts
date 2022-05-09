@@ -1,4 +1,4 @@
-import { Component, Output } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { DataInfoService } from '../data-info.service';
 
 @Component({
@@ -8,9 +8,8 @@ import { DataInfoService } from '../data-info.service';
 })
 export class ManegmentModulComponent {
 
-  @Output() openAddWindow() {
-     
-  }
+  @Output() onOpenAddWindow = new EventEmitter;
+
   constructor(private srv: DataInfoService) { }
 
   searchInfo(event: any) {
@@ -20,6 +19,9 @@ export class ManegmentModulComponent {
     }
   }
 
+  openAddWindow() {
+    this.onOpenAddWindow.emit();
+  }
 
 
 }

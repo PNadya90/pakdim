@@ -1,7 +1,9 @@
 <div class="add-window">
     <div class="header-window">
         <div class="title">Create New</div>
-        <div class="close-container"><button class="close-btn"> <img src="./assets/x.svg"></button></div>
+        <div class="close-container">
+            <button class="close-btn" (click)="closeWindow()"> <img src="./assets/x.svg"></button>
+        </div>
     </div>
     <div class="name-color-container">
         <div class="labels">
@@ -21,7 +23,7 @@
     </div>
     <div class="btn-container">
         <div class="buttons-area">
-            <button class="cancel-btn" (click)="cancel()">CANCEL</button>
+            <button class="cancel-btn" (click)="closeWindow()">CANCEL</button>
             <button class="save-btn">SAVE</button>
             </div>
     </div>
