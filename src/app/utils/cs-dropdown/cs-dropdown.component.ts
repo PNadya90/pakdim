@@ -1,12 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-cs-dropdown',
   templateUrl: './cs-dropdown.component.html',
   styleUrls: ['./cs-dropdown.component.scss']
 })
-export class CsDropdownComponent implements OnInit {
+export class CsDropdownComponent{
   toggle = false;
+  pickedColor='';
   colors = [{ key: 1, value:'#000000'},
             { key: 2, value:'#696969'},
             { key: 3, value:'#C0C0C0'},
@@ -39,11 +40,13 @@ export class CsDropdownComponent implements OnInit {
 
 ]
   constructor() { }
-
-  ngOnInit(): void {
-  }
   drop() {
     this.toggle = !this.toggle;
-
   }
+
+  pickColor(event:any){
+
+    this.pickedColor=event.target.style.backgroundColor;
+  }
+
 }

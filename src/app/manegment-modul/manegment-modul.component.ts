@@ -11,7 +11,7 @@ export class ManegmentModulComponent {
   constructor(private srv: DataInfoService) { }
 
   searchInfo(event: any) {
-    console.log(event);
+    // console.log(event);
     if (event && event.target) {
       this.srv.setInfo(event.target.value)
     }

@@ -11,6 +11,8 @@ export class AddWindowComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  cancel(){
+    
+  }
 
 }
