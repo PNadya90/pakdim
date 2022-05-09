@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ManegmentModulComponent } from './manegment-modul/manegment-modul.component';
@@ -22,6 +23,7 @@ import { CsDropdownComponent } from './utils/cs-dropdown/cs-dropdown.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    BrowserAnimationsModule,
   ],
   providers: [DataInfoService],
   bootstrap: [AppComponent]

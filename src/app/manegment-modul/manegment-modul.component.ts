@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output } from '@angular/core';
 import { DataInfoService } from '../data-info.service';
 
 @Component({
@@ -8,6 +8,9 @@ import { DataInfoService } from '../data-info.service';
 })
 export class ManegmentModulComponent {
 
+  @Output() openAddWindow() {
+     
+  }
   constructor(private srv: DataInfoService) { }
 
   searchInfo(event: any) {
@@ -16,6 +19,7 @@ export class ManegmentModulComponent {
       this.srv.setInfo(event.target.value)
     }
   }
+
 
 
 }

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class CsDropdownComponent{
   toggle = false;
   pickedColor='';
-  colors = [{ key: 1, value:'#000000'},
+  colors = [{ key: 1,  value:'#000000'},
             { key: 2, value:'#696969'},
             { key: 3, value:'#C0C0C0'},
             { key: 4, value:'#DCDCDC'},
@@ -20,11 +20,11 @@ export class CsDropdownComponent{
             { key: 9, value:'#FF0000'},
             { key: 10, value:'#FF6347'},
 
-            { key: 11, value:'#9400D3'},
-            { key: 12, value:'#9932CC'},
-            { key: 13, value:'#BA55D3'},
-            { key: 14, value:'#9D59E0'},
-            { key: 15, value:'#D8BFD8'},
+            { key: 11, value:'#ff33e4'},
+            { key: 12, value:'#FF1CE2'},
+            { key: 13, value:'#ff4de7'},
+            { key: 14, value:'#ff66eb'},
+            { key: 15, value:'#ff80ee'},
 
             { key: 16, value:'#59e097'},
             { key: 17, value:'#68e3a2'},
