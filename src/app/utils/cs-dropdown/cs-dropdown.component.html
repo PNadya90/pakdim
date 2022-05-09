@@ -3,7 +3,7 @@
     </div>
     <div class="drop-icon-down" *ngIf="!toggle" >▼</div>
     <div class="drop-icon-up" *ngIf="toggle">▲</div>
-    <div class="colors-area">
+    <div class="colors-area" (click)="drop()">
         <div class="color-cell" *ngFor="let cell of colors" [ngStyle]="{'background-color': cell.value}"  (click)="pickColor($event)"></div>
     </div>
 </button>

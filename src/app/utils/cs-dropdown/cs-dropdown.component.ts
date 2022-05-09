@@ -40,13 +40,13 @@ export class CsDropdownComponent{
 
 ]
   constructor() { }
+
   drop() {
     this.toggle = !this.toggle;
   }
 
   pickColor(event:any){
-
-    this.pickedColor=event.target.style.backgroundColor;
+    this.pickedColor=event.target.style.backgroundColor; 
+    this.drop();
   }
-
 }
