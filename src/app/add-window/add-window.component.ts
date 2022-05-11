@@ -7,12 +7,13 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class AddWindowComponent {
   @Output() onCloseWindow = new EventEmitter;
-  closeToggle=false;
+  closeToggle = false;
   constructor() { }
 
-  closeWindow(){
+  closeWindow() {
     this.onCloseWindow.emit();
-
+    document.dispatchEvent(new Event("closeColorContainer"))
   }
+
 
 }

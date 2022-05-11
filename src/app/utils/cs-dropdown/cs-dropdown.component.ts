@@ -39,10 +39,15 @@ export class CsDropdownComponent{
             { key: 25, value:'#ffd666'},
 
 ]
-  constructor() { }
+  constructor() { 
+    document.addEventListener("closeColorContainer",()=>{
+      this.toggle=false;
+    })
+  }
 
   drop() {
     this.toggle = !this.toggle;
+    
   }
 
   pickColor(event:any){
