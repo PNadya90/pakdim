@@ -3,7 +3,9 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
+    height: 95%;
+    overflow-y: scroll;
+    scrollbar-width: none;
     .tile-container {
         width: 204px;
         height: 209px;
@@ -44,18 +46,19 @@
     }
 
     .tile-container:hover {
-        outline: solid 1px #007AF9;
+        border: solid 1px #007AF9;
 
         .color {
             width: 130px;
             height: 130px;
             margin: auto;
             border-radius: 10px;
-            transition-duration: 0.3s;
+            transition-duration: 0.4s;
             transition-timing-function: ease-in-out;
         }
 
         .name-container {
+            width: 202px;
             .name {
                 color: #007AF9;
                 font-family: 'Helvetica Neue LT';
