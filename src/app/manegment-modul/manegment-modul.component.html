@@ -1,14 +1,30 @@
 <div class="tool">
     <div class="title">Management Tool</div>
     <div class="tools-icons">
-        <button class="tool-btns"> <img src="./assets/Tiles Mode.svg"></button>
-        <button class="tool-btns"> <img src="./assets/List Mode.svg"></button>
-        <button class="tool-btns"> <img src="./assets/Create New.svg" (click)="openAddWindow()"></button>
+        <button class="tool-btns" (click)="showTileView()">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22">
+                <rect class="tileIcon-fill" width="11" height="10" transform="translate(13 12)" fill="#0e4f6e"
+                    opacity="0.55" />
+                <rect class="tileIcon-fill" width="11" height="10" transform="translate(13)" fill="#0e4f6e"
+                    opacity="0.55" />
+                <rect class="tileIcon-fill" width="11" height="10" transform="translate(0 12)" fill="#0e4f6e"
+                    opacity="0.55" />
+                <rect class="tileIcon-fill" width="11" height="10" fill="#0e4f6e" opacity="0.55" />
+            </svg>
+        </button>
+        <button class="tool-btns" (click)="showListView()">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22">
+                <rect class="listIcon-fill" width="24" height="4" fill="#007af9" />
+                <rect class="listIcon-fill" width="24" height="4" transform="translate(0 18)" fill="#007af9" />
+                <rect class="listIcon-fill" width="24" height="4" transform="translate(0 9)" fill="#007af9" />
+            </svg>
+        </button>
+        <button class="tool-btns" (click)="openAddWindow()"> <img src="./assets/Create New.svg" id="addBtn"></button>
     </div>
 </div>
 <div class="search">
     <div class="icon-search">
         <img src="./assets/Find.svg">
-    </div> 
+    </div>
     <input type="text" class="search-input" placeholder="Find by name ..." (keydown)="searchInfo($event)">
 </div>

@@ -37,7 +37,7 @@
 },
 
 {
-	"color":"##AD0000",
+	"color":"#AD0000",
 	"name":"Murder",
 	"createDate":"16/10/2021",
 	"lastUpdate":"16/10/2021",
@@ -52,7 +52,7 @@
 },
 
 {
-	"color":"##AD0000",
+	"color":"#AD0000",
 	"name":"Murder",
 	"createDate":"16/10/2021",
 	"lastUpdate":"16/10/2021",
@@ -60,22 +60,7 @@
 },
 
 {
-	"color":"##AD0000",
-	"name":"Murder",
-	"createDate":"16/10/2021",
-	"lastUpdate":"16/10/2021",
-	"createdBy":"Chen Meir"
-},
-{
-	"color":"#FF1CE2",
-	"name":"Human trafficking for prostitution",
-	"createDate":"26/01/2021",
-	"lastUpdate":"26/01/2021",
-	"createdBy":"Ran Shim"
-},
-
-{
-	"color":"##AD0000",
+	"color":"#AD0000",
 	"name":"Murder",
 	"createDate":"16/10/2021",
 	"lastUpdate":"16/10/2021",
@@ -90,7 +75,22 @@
 },
 
 {
-	"color":"##AD0000",
+	"color":"#AD0000",
+	"name":"Murder",
+	"createDate":"16/10/2021",
+	"lastUpdate":"16/10/2021",
+	"createdBy":"Chen Meir"
+},
+{
+	"color":"#FF1CE2",
+	"name":"Human trafficking for prostitution",
+	"createDate":"26/01/2021",
+	"lastUpdate":"26/01/2021",
+	"createdBy":"Ran Shim"
+},
+
+{
+	"color":"#AD0000",
 	"name":"Murder",
 	"createDate":"16/10/2021",
 	"lastUpdate":"16/10/2021",

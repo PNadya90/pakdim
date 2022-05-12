@@ -1,0 +1,8 @@
+<div class="tile-view-container">
+    <div class="tile-container" *ngFor="let item of itemsToShow">
+        <div class="color" [ngStyle]="{'background-color': item.color}"></div>
+        <div class="name-container">
+            <span class="name">{{item.name}}</span>
+        </div>
+    </div>
+</div>

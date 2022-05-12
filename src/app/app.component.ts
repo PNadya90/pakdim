@@ -7,22 +7,31 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
   animations: [trigger('openWindow', [
     state('initial', style({ width: 0 })),
-    state('expanded', style({ width: 40 +'%'})),
+    state('expanded', style({ width: 40 + '%' })),
     transition('initial <=> expanded', animate('0.5s')),
   ]),
-],
+  ],
 })
 export class AppComponent {
   title = 'modeList';
-  width = 0;
+  listView = true;
+  isExpanded = false;
 
-  isExpanded=false;
-
-  showWindow(){
-    this.isExpanded=true;
+  showWindow() {
+    this.isExpanded = true;
   }
 
-  hideWindow(){
-    this.isExpanded=false;
+  hideWindow() {
+    this.isExpanded = false;
   }
+
+  showTile() {
+    this.listView = false;
+    
+  }
+
+  showList() {
+    this.listView = true;
+  }
+
 }

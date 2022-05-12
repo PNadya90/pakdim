@@ -26,24 +26,25 @@ export class InfoComponent extends Unsubscriber implements OnInit {
         this.itemsToShow = this.items.slice();
       });
 
-    this.srv.search.pipe(takeUntil(this.$onDestroy)).subscribe((inputData: string) => {
-       let inputSrch  = inputData.toLowerCase();
-       console.log(inputData);
-       
+    this.srv.search
+      .pipe(takeUntil(this.$onDestroy))
+      .subscribe((inputData: string) => {
+        let inputSrch = inputData.toLowerCase();
+        console.log(inputData);
+        
+        if (inputSrch === null || inputSrch === '') {
+          this.itemsToShow = this.items.slice();
+        }
 
-      if (inputSrch  === null || inputSrch  === '') {
-        this.itemsToShow = this.items.slice();
-      }
-
-      let arr = this.items.filter((item:any) => {
-      return item.name.toLowerCase().includes(inputSrch);
+        let arr = this.items.filter((item: any) => {
+          return item.name.toLowerCase().includes(inputSrch);
+        })
+        if (arr && arr.length > 0) {
+          this.itemsToShow = arr.slice();
+        } else {
+          this.itemsToShow = [];
+        }
       })
-      if(arr && arr.length > 0 ){
-        this.itemsToShow = arr.slice();
-      } else {
-        this.itemsToShow = [];
-      }
-    })
 
   }
 

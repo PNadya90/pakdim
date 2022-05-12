@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { DataInfoService } from './data-info.service';
 import { AddWindowComponent } from './add-window/add-window.component';
 import { CsDropdownComponent } from './utils/cs-dropdown/cs-dropdown.component';
+import { TileViewComponent } from './tile-view/tile-view.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CsDropdownComponent } from './utils/cs-dropdown/cs-dropdown.component';
     ManegmentModulComponent,
     InfoComponent,
     AddWindowComponent,
-    CsDropdownComponent
+    CsDropdownComponent,
+    TileViewComponent
   ],
   imports: [
     BrowserModule,
