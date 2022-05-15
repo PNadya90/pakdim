@@ -12,13 +12,13 @@
     <input class="search-url" placeholder="URL">
     <button class="btn-go">GO</button>
   </div>
-  <app-manegment-modul (onOpenAddWindow)="showWindow()" (onShowTileView)="showTile()" (onShowLIstView)="showList()"></app-manegment-modul>
+  <app-manegment-modul (onOpenAddWindow)="showWindow()" (onShowTileView)="showTile()" (onShowLIstView)="showList()" ></app-manegment-modul>
   <div class="viewer-container" >
-    <app-info *ngIf="listView" ></app-info>
-    <app-tile-view *ngIf="!listView" ></app-tile-view>
+    <app-info *ngIf="listView" (onShowItemDetails)="showItemDetails($event)"></app-info>
+    <app-tile-view *ngIf="!listView" (onShowItemDetails)="showItemDetails($event)"></app-tile-view>
   </div>
   <div class="add-area" [@openWindow]="this.isExpanded ? 'expanded' : 'initial'">
-    <app-add-window (onCloseWindow)="hideWindow()"></app-add-window>
+    <app-add-window (onCloseWindow)="hideWindow()" [itemDetails]="selecteditem"></app-add-window>
   </div>
  
 </body>

@@ -1,5 +1,5 @@
 <div class="tile-view-container">
-    <div class="tile-container" *ngFor="let item of itemsToShow">
+    <div class="tile-container" *ngFor="let item of itemsToShow" (click)="showItemDetails(item)">
         <div class="color-container">
             <div class="color" [ngStyle]="{'background-color': item.color}"></div>
         </div>        

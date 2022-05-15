@@ -16,6 +16,7 @@ export class AppComponent {
   title = 'modeList';
   listView = true;
   isExpanded = false;
+  selecteditem: any;
 
   showWindow() {
     this.isExpanded = true;
@@ -27,11 +28,18 @@ export class AppComponent {
 
   showTile() {
     this.listView = false;
-    
+
   }
 
   showList() {
     this.listView = true;
+  }
+
+  showItemDetails(event: any) {
+    let obj = JSON.stringify(event)
+    this.isExpanded = true;
+    this.selecteditem = JSON.parse(obj);
+    console.log(event);
   }
 
 }

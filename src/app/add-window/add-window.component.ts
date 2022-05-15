@@ -1,6 +1,6 @@
 import { formatDate } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChange, SimpleChanges } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { DataInfoService } from '../data-info.service';
 
@@ -9,17 +9,26 @@ import { DataInfoService } from '../data-info.service';
   templateUrl: './add-window.component.html',
   styleUrls: ['./add-window.component.scss']
 })
-export class AddWindowComponent implements OnInit {
+export class AddWindowComponent implements OnInit, OnChanges {
   @Output() onCloseWindow = new EventEmitter;
   closeToggle = false;
   form!: FormGroup;
   colorForForm = 'black';
+  @Input() itemDetails: any;
+
   constructor(private httpClient: HttpClient, private srv: DataInfoService) { }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    this.form?.controls['name'].setValue(this.itemDetails['name']);
+    this.form?.controls['tagDiscription'].setValue(this.itemDetails['description']);
+  }
 
   closeWindow() {
     this.onCloseWindow.emit();
-    document.dispatchEvent(new Event("closeColorContainer"))
+    document.dispatchEvent(new Event("closeColorContainer"));
+    this.cleanForm()
   }
+
   ngOnInit() {
 
     this.form = new FormGroup({
@@ -39,13 +48,18 @@ export class AddWindowComponent implements OnInit {
       tagDiscription: this.form.controls['tagDiscription'].value,
       createDate: jstoday,
       lastUpdate: changeDate,
-      createdBy:'User'
+      createdBy: 'User'
     }
-    this.srv.setData(newInfo); 
+    this.srv.setData(newInfo);
     this.closeWindow();
   }
 
   pickedColor(event: any) {
     this.colorForForm = event;
+  }
+
+  cleanForm() {
+    this.form.reset();
+    this.itemDetails.color=''
   }
 }

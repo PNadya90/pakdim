@@ -9,7 +9,7 @@
         </div>
     </div>
     <div class="items-list" >
-        <div class="item"  *ngFor="let item of itemsToShow" >
+        <div class="item"  *ngFor="let item of itemsToShow" (click)="showItemDetails(item)">
             <div class="item-color">
                 <div class="color-icon" [ngStyle]="{'background-color': item.color}"></div>
             </div>

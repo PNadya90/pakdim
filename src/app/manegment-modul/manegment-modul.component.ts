@@ -38,7 +38,7 @@ export class ManegmentModulComponent {
     this.tileIcon.forEach((el: any) => {
       el.style.fill = '#007AF9';
       el.style.opacity = 1;
-      console.log(this.tileIcon);
+      // console.log(this.tileIcon);
 
     });
 

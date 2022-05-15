@@ -14,7 +14,7 @@
             <div class="name-color">
                 <input class="name" placeholder="Type tag name…" formControlName="name">
                 <div class="color" >
-                    <app-cs-dropdown class="cs-dropdown" (onPickColor)="pickedColor($event)"></app-cs-dropdown>
+                    <app-cs-dropdown class="cs-dropdown" (onPickColor)="pickedColor($event)" [pickedColor]="itemDetails?.color"></app-cs-dropdown>
                 </div>
             </div>
         </div>

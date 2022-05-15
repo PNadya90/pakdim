@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { takeUntil } from 'rxjs';
 import { DataInfoService } from '../data-info.service';
 import { Unsubscriber } from './unsubscriber';
@@ -10,17 +10,17 @@ import { Unsubscriber } from './unsubscriber';
   styleUrls: ['./info.component.scss']
 })
 export class InfoComponent extends Unsubscriber implements OnInit {
+  @Output() onShowItemDetails = new EventEmitter;
   items: any = [];
   itemsToShow: any = [];
-  // searchData = ''
   constructor(private httpClient: HttpClient, private srv: DataInfoService) {
     super();
   }
 
   ngOnInit() {
-    this.srv.items.subscribe((data:any)=>{
-      this.items=data;
-      this.itemsToShow=data;
+    this.srv.items.subscribe((data: any) => {
+      this.items = data;
+      this.itemsToShow = data;
     })
 
     this.srv.search
@@ -42,8 +42,10 @@ export class InfoComponent extends Unsubscriber implements OnInit {
           this.itemsToShow = [];
         }
       })
-
   }
 
-
+  showItemDetails(item:any) {
+    this.onShowItemDetails.emit(item);
+  }
 }
+

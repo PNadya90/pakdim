@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { takeUntil } from 'rxjs';
 import { DataInfoService } from '../data-info.service';
 import { Unsubscriber } from '../info/unsubscriber';
@@ -10,6 +10,7 @@ import { Unsubscriber } from '../info/unsubscriber';
   styleUrls: ['./tile-view.component.scss']
 })
 export class TileViewComponent extends Unsubscriber implements OnInit {
+  @Output() onShowItemDetails = new EventEmitter;
   items: any = [];
   itemsToShow: any = [];
   constructor(private httpClient: HttpClient, private srv: DataInfoService) { 
@@ -42,6 +43,9 @@ export class TileViewComponent extends Unsubscriber implements OnInit {
         }
       })
     
+  }
+  showItemDetails(item:any) {
+    this.onShowItemDetails.emit(item);
   }
 
 }
