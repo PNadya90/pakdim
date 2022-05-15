@@ -39,7 +39,6 @@ export class AppComponent {
     let obj = JSON.stringify(event)
     this.isExpanded = true;
     this.selecteditem = JSON.parse(obj);
-    console.log(event);
   }
 
 }
