@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { InfoComponent } from './info.component';
 
 describe('InfoComponent', () => {

@@ -15,31 +15,37 @@
         margin-left: 0px;
         display: flex;
         flex-direction: column;
-        transition-delay: 0.1s;
-        transition-duration: 1s;
-
-        .color {
-            width: 105px;
-            height: 105px;
-            margin: auto;
-            border-radius: 10px;
-            transition-delay: 0.1s;
-            transition-duration: 0.3s;
-
+        .color-container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .color {
+                width: 105px;
+                height: 105px; 
+                border-radius: 10px;
+                transition-delay: 0.1s;
+                transition-duration: 0.3s;
+    
+            }
         }
 
         .name-container {
-            width: 204px;
+            width: 100%;
             text-align: center;
             background-color: #F8F8F8;
             height: 30px;
-            overflow: hidden;
+            text-overflow: ellipsis;
+            overflow: hidden; 
+            white-space: nowrap;
 
             .name {
+                padding: 7px;
                 margin: auto;
                 transition-delay: 0.1s;
                 transition-duration: 0.3s;
-                font-family: 'Helvetica Neue LT';
+                font-family: 'Helvetica Neue';
                 color: #797979;
             }
         }
@@ -47,23 +53,17 @@
 
     .tile-container:hover {
         border: solid 1px #007AF9;
-
-        .color {
-            width: 130px;
-            height: 130px;
-            margin: auto;
-            border-radius: 10px;
-            transition-duration: 0.4s;
-            transition-timing-function: ease-in-out;
+        .color-container{
+            .color {
+                width: 130px;
+                height: 130px;
+                transition-duration: 0.4s;
+            } 
         }
-
-        .name-container {
-            width: 202px;
+        .name-container{
             .name {
-                color: #007AF9;
-                font-family: 'Helvetica Neue LT';
-                font-weight: bold;
                 font-size: 18px;
+                color: #007AF9;
             }
         }
     }

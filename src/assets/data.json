@@ -1,16 +1,19 @@
+
 [{
 	"color":"#59E097",
 	"name": "Car accident",
 	"createDate" : "03/02/2021",
 	"lastUpdate":"03/02/2021",
-	"createdBy":"Ori Lugasi"
+	"createdBy":"Ori Lugasi",
+	"description":""
 },
 {
 	"color":"#FF1CE2",
 	"name":"Human trafficking for prostitution",
 	"createDate":"26/01/2021",
 	"lastUpdate":"26/01/2021",
-	"createdBy":"Ran Shim"
+	"createdBy":"Ran Shim",
+	"description":""
 },
 
 {
@@ -18,7 +21,8 @@
 	"name":"Murder",
 	"createDate":"16/10/2021",
 	"lastUpdate":"16/10/2021",
-	"createdBy":"Chen Meir"
+	"createdBy":"Chen Meir",
+	"description":""
 },
 
 {
@@ -26,14 +30,16 @@
 	"name": "Car accident",
 	"createDate" : "03/02/2021",
 	"lastUpdate":"03/02/2021",
-	"createdBy":"Ori Lugasi"
+	"createdBy":"Ori Lugasi",
+	"description":""
 },
 {
 	"color":"#FF1CE2",
 	"name":"Human trafficking for prostitution",
 	"createDate":"26/01/2021",
 	"lastUpdate":"26/01/2021",
-	"createdBy":"Ran Shim"
+	"createdBy":"Ran Shim",
+	"description":""
 },
 
 {
@@ -41,14 +47,16 @@
 	"name":"Murder",
 	"createDate":"16/10/2021",
 	"lastUpdate":"16/10/2021",
-	"createdBy":"Chen Meir"
+	"createdBy":"Chen Meir",
+	"description":""
 },
 {
 	"color":"#FF1CE2",
 	"name":"Human trafficking for prostitution",
 	"createDate":"26/01/2021",
 	"lastUpdate":"26/01/2021",
-	"createdBy":"Ran Shim"
+	"createdBy":"Ran Shim",
+	"description":""
 },
 
 {
@@ -56,7 +64,8 @@
 	"name":"Murder",
 	"createDate":"16/10/2021",
 	"lastUpdate":"16/10/2021",
-	"createdBy":"Chen Meir"
+	"createdBy":"Chen Meir",
+	"description":""
 },
 
 {
@@ -64,14 +73,16 @@
 	"name":"Murder",
 	"createDate":"16/10/2021",
 	"lastUpdate":"16/10/2021",
-	"createdBy":"Chen Meir"
+	"createdBy":"Chen Meir",
+	"description":""
 },
 {
 	"color":"#FF1CE2",
 	"name":"Human trafficking for prostitution",
 	"createDate":"26/01/2021",
 	"lastUpdate":"26/01/2021",
-	"createdBy":"Ran Shim"
+	"createdBy":"Ran Shim",
+	"description":""
 },
 
 {
@@ -79,14 +90,16 @@
 	"name":"Murder",
 	"createDate":"16/10/2021",
 	"lastUpdate":"16/10/2021",
-	"createdBy":"Chen Meir"
+	"createdBy":"Chen Meir",
+	"description":""
 },
 {
 	"color":"#FF1CE2",
 	"name":"Human trafficking for prostitution",
 	"createDate":"26/01/2021",
 	"lastUpdate":"26/01/2021",
-	"createdBy":"Ran Shim"
+	"createdBy":"Ran Shim",
+	"description":""
 },
 
 {
@@ -94,6 +107,7 @@
 	"name":"Murder",
 	"createDate":"16/10/2021",
 	"lastUpdate":"16/10/2021",
-	"createdBy":"Chen Meir"
+	"createdBy":"Chen Meir",
+	"description":""
 }
 ]

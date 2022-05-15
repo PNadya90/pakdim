@@ -11,6 +11,7 @@ import { DataInfoService } from './data-info.service';
 import { AddWindowComponent } from './add-window/add-window.component';
 import { CsDropdownComponent } from './utils/cs-dropdown/cs-dropdown.component';
 import { TileViewComponent } from './tile-view/tile-view.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { TileViewComponent } from './tile-view/tile-view.component';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
   ],
   providers: [DataInfoService],
   bootstrap: [AppComponent]

@@ -18,20 +18,17 @@ export class InfoComponent extends Unsubscriber implements OnInit {
   }
 
   ngOnInit() {
-
-    this.httpClient.get('assets/data.json')
-      .pipe(takeUntil(this.$onDestroy))
-      .subscribe(data => {
-        this.items = data;
-        this.itemsToShow = this.items.slice();
-      });
+    this.srv.items.subscribe((data:any)=>{
+      this.items=data;
+      this.itemsToShow=data;
+    })
 
     this.srv.search
       .pipe(takeUntil(this.$onDestroy))
       .subscribe((inputData: string) => {
         let inputSrch = inputData.toLowerCase();
         console.log(inputData);
-        
+
         if (inputSrch === null || inputSrch === '') {
           this.itemsToShow = this.items.slice();
         }

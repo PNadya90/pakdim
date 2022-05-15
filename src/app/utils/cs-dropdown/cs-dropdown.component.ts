@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-cs-dropdown',
@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./cs-dropdown.component.scss']
 })
 export class CsDropdownComponent{
+  @Output() onPickColor = new EventEmitter<string>();
   toggle = false;
   pickedColor='';
   colors = [{ key: 1,  value:'#000000'},
@@ -53,5 +54,6 @@ export class CsDropdownComponent{
   pickColor(event:any){
     this.pickedColor=event.target.style.backgroundColor; 
     this.drop();
+    this.onPickColor.emit(this.pickedColor);
   }
 }
