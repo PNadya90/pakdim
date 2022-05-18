@@ -39,12 +39,13 @@ export class AddWindowComponent implements OnInit, OnChanges {
   }
 
   onSubmit() {
+    debugger
     let today = new Date();
     const jstoday = formatDate(today, 'dd/MM/yyyy', 'en-US');
     let changeDate = formatDate(today, 'dd/MM/yyyy', 'en-US');
     let newInfo = {
       name: this.form.controls['name'].value,
-      color: this.colorForForm,
+      color: this.itemDetails ? this.itemDetails.color : this.colorForForm,
       tagDiscription: this.form.controls['tagDiscription'].value,
       createDate: jstoday,
       lastUpdate: changeDate,
