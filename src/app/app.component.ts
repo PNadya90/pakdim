@@ -7,12 +7,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
   animations: [trigger('openWindow', [
     state('initial', style({ width: 0 })),
-    state('expanded', style({ width: 40 + '%' })),
+    state('expanded', style({ width: 50 + '%' })),
     transition('initial <=> expanded', animate('0.5s')),
   ]),
+    trigger('openWindowWide', [
+    state('initial', style({ width: 0 })),
+    state('expanded', style({ width: 100 + '%' })),
+    transition('initial <=> expanded', animate('0.5s')),
+  ])
   ],
 })
+
 export class AppComponent {
+  width=window.innerWidth;
+  windowView=0;
   title = 'modeList';
   listView = true;
   isExpanded = false;
@@ -20,6 +28,9 @@ export class AppComponent {
 
   showWindow() {
     this.isExpanded = true;
+    if(this.width<700){
+      this.windowView=1;
+     }
   }
 
   hideWindow() {
