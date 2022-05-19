@@ -1,10 +1,11 @@
 .tool {
-    margin: 0px 66px 30px 70px;
+    margin: 30px 70px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 
     .title {
+        margin: 15px 0px;
         font-size: 20px;
         color: #0E4F6E;
         font-family: 'Helvetica Neue';
@@ -21,7 +22,7 @@
 }
 
 .search {
-    margin: 0px 66px 25px 70px;
+    margin: 25px 70px;
     height: 66px;
     position: relative;
 
@@ -31,6 +32,7 @@
         left: 3px;
 
     }
+
     .search-input {
         height: 66px;
         width: 100%;
@@ -38,14 +40,38 @@
         text-indent: 35px;
         box-shadow: 0px 3px 6px #00000029;
     }
-    
+
     .search-input::placeholder {
         font-style: italic;
     }
-    
+
     .search-input:focus {
         outline: none !important;
         border: 2px solid #007AF9;
     }
 }
 
+@media all and (max-width: 480px) {
+    .tool {
+        display: block;
+        margin: 30px;
+        .tools-icons {
+            .tool-btns {
+                margin: auto;
+            }
+        }
+    }
+
+    .search {
+        .icon-search {
+            position: absolute;
+            top: 8px;
+            left: 3px;
+    
+        }
+        margin: 0px 30px;
+        .search-input {
+            height: 40px;
+        }
+    }    
+}
