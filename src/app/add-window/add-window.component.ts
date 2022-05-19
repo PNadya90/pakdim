@@ -19,6 +19,8 @@ export class AddWindowComponent implements OnInit, OnChanges {
   constructor(private httpClient: HttpClient, private srv: DataInfoService) { }
 
   ngOnChanges(changes: SimpleChanges): void {
+    let itemColor = changes['itemDetails'].currentValue?.color;
+    this.colorForForm = itemColor;
     this.form?.controls['name'].setValue(this.itemDetails['name']);
     this.form?.controls['tagDiscription'].setValue(this.itemDetails['description']);
   }
@@ -39,14 +41,15 @@ export class AddWindowComponent implements OnInit, OnChanges {
   }
 
   onSubmit() {
-    debugger
+    // debugger
     let today = new Date();
     const jstoday = formatDate(today, 'dd/MM/yyyy', 'en-US');
     let changeDate = formatDate(today, 'dd/MM/yyyy', 'en-US');
     let newInfo = {
+      id: this.itemDetails.id,
       name: this.form.controls['name'].value,
-      color: this.itemDetails ? this.itemDetails.color : this.colorForForm,
-      tagDiscription: this.form.controls['tagDiscription'].value,
+      color: this.colorForForm,
+      description: this.form.controls['tagDiscription'].value,
       createDate: jstoday,
       lastUpdate: changeDate,
       createdBy: 'User'
@@ -61,6 +64,9 @@ export class AddWindowComponent implements OnInit, OnChanges {
 
   cleanForm() {
     this.form.reset();
-    this.itemDetails.color=''
+    if (this.itemDetails) {
+      this.itemDetails.color = '';
+    }
+
   }
 }

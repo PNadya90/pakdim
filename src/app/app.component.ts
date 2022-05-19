@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
   animations: [trigger('openWindow', [
     state('initial', style({ width: 0 })),
-    state('expanded', style({ width: 50 + '%' })),
+    state('expanded', style({ width: 40 + '%' })),
     transition('initial <=> expanded', animate('0.5s')),
   ]),
     trigger('openWindowWide', [
@@ -47,6 +47,9 @@ export class AppComponent {
   }
 
   showItemDetails(event: any) {
+    if(this.width<700){
+      this.windowView=1;
+     }
     let obj = JSON.stringify(event)
     this.isExpanded = true;
     this.selecteditem = JSON.parse(obj);
