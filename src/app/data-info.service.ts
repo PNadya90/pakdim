@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Subject, takeUntil } from 'rxjs';
+import { BehaviorSubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -31,6 +31,11 @@ export class DataInfoService {
       foundItem.lastUpdate=el.lastUpdate;
     }
     else {
+      let lastId=1;
+      if(data){
+         lastId=data[data.length-1].id + 1;
+      }
+      el.id=lastId;
       data.push(el);
     }
 

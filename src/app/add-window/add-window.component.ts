@@ -46,7 +46,7 @@ export class AddWindowComponent implements OnInit, OnChanges {
     const jstoday = formatDate(today, 'dd/MM/yyyy', 'en-US');
     let changeDate = formatDate(today, 'dd/MM/yyyy', 'en-US');
     let newInfo = {
-      id: this.itemDetails.id,
+      id: this.itemDetails?.id,
       name: this.form.controls['name'].value,
       color: this.colorForForm,
       description: this.form.controls['tagDiscription'].value,
@@ -65,7 +65,8 @@ export class AddWindowComponent implements OnInit, OnChanges {
   cleanForm() {
     this.form.reset();
     if (this.itemDetails) {
-      this.itemDetails.color = '';
+      this.itemDetails=null;
+
     }
 
   }
