@@ -17,6 +17,7 @@
                     <app-cs-dropdown class="cs-dropdown" (onPickColor)="pickedColor($event)" [pickedColor]="colorForForm"></app-cs-dropdown>
                 </div>
             </div>
+            <div class="invalidName" *ngIf="form.get('name')?.invalid && form.get('name')?.touched">Please specify name. </div>
         </div>
         <div class="textarea-area">
             <div class="tag-label">Tag Description</div>

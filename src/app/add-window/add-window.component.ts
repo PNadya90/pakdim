@@ -1,7 +1,7 @@
 import { formatDate } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChange, SimpleChanges } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { DataInfoService } from '../data-info.service';
 
 @Component({
@@ -34,28 +34,35 @@ export class AddWindowComponent implements OnInit, OnChanges {
   ngOnInit() {
 
     this.form = new FormGroup({
-      name: new FormControl('',),
-      tagDiscription: new FormControl('',),
+      name: new FormControl('', Validators.required),
+      tagDiscription: new FormControl('', ),
     });
 
   }
 
   onSubmit() {
     // debugger
-    let today = new Date();
-    const jstoday = formatDate(today, 'dd/MM/yyyy', 'en-US');
-    let changeDate = formatDate(today, 'dd/MM/yyyy', 'en-US');
-    let newInfo = {
-      id: this.itemDetails?.id,
-      name: this.form.controls['name'].value,
-      color: this.colorForForm,
-      description: this.form.controls['tagDiscription'].value,
-      createDate: jstoday,
-      lastUpdate: changeDate,
-      createdBy: 'User'
+    if(this.form.controls['name'].errors
+    ){
+      console.log("errr");
+      
+    } else{
+      let today = new Date();
+      const jstoday = formatDate(today, 'dd/MM/yyyy', 'en-US');
+      let changeDate = formatDate(today, 'dd/MM/yyyy', 'en-US');
+      let newInfo = {
+        id: this.itemDetails?.id,
+        name: this.form.controls['name'].value,
+        color: this.colorForForm,
+        description: this.form.controls['tagDiscription'].value,
+        createDate: jstoday,
+        lastUpdate: changeDate,
+        createdBy: 'User'
+      }
+      this.srv.setData(newInfo);
+      this.closeWindow();
     }
-    this.srv.setData(newInfo);
-    this.closeWindow();
+    
   }
 
   pickedColor(event: any) {
