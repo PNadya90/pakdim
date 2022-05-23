@@ -47,5 +47,8 @@ export class InfoComponent extends Unsubscriber implements OnInit {
   showItemDetails(item:any) {
     this.onShowItemDetails.emit(item);
   }
+  sortList(){
+    this.itemsToShow.sort((a:any,b:any)=>a.name > b.name? 1: -1)
+  }
 }
 
