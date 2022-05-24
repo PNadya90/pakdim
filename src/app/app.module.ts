@@ -13,6 +13,7 @@ import { CsDropdownComponent } from './utils/cs-dropdown/cs-dropdown.component';
 import { TileViewComponent } from './tile-view/tile-view.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppEventList} from './event-list/event-list.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AppEventList} from './event-list/event-list.component';
     AddWindowComponent,
     CsDropdownComponent,
     TileViewComponent,
-    AppEventList
+    AppEventList,
+    AboutMeComponent
   ],
 
   imports: [
