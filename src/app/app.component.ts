@@ -17,7 +17,9 @@ export class AppComponent {
     this.portfolio = true;
     this.iconColorAbout = 'rgb(121, 110, 110)';
     this.iconColorPortfolio = '#FF5D5D';
-
+    if (this.toggle) {
+      this.showMenu()
+    }
   }
 
   showAbout() {
@@ -25,8 +27,15 @@ export class AppComponent {
     this.portfolio = false;
     this.iconColorAbout = '#FF5D5D';
     this.iconColorPortfolio = 'rgb(121, 110, 110)';
+    if (this.toggle) {
+      this.showMenu()
+    }
   }
   showMenu() {
     this.toggle = !this.toggle;
+  }
+
+  downloadCV(){
+    window.open('./assets/CV_Nadya.pdf','_blank');
   }
 }
