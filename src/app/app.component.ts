@@ -7,23 +7,26 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  summary=true;
-  portfolio=false;
-  iconColorAbout='#FF5D5D';
-  iconColorPortfolio='rgb(121, 110, 110)';
+  summary = true;
+  portfolio = false;
+  iconColorAbout = '#FF5D5D';
+  iconColorPortfolio = 'rgb(121, 110, 110)';
+  toggle = false;
+  showPortfolio() {
+    this.summary = false;
+    this.portfolio = true;
+    this.iconColorAbout = 'rgb(121, 110, 110)';
+    this.iconColorPortfolio = '#FF5D5D';
 
-  showPortfolio(){
-    this.summary=false;
-    this.portfolio=true;
-    this.iconColorAbout='rgb(121, 110, 110)';
-    this.iconColorPortfolio='#FF5D5D';
-    
   }
-  
-  showAbout(){
-    this.summary=true;
-    this.portfolio=false;
-    this.iconColorAbout='#FF5D5D';
-    this.iconColorPortfolio='rgb(121, 110, 110)';
+
+  showAbout() {
+    this.summary = true;
+    this.portfolio = false;
+    this.iconColorAbout = '#FF5D5D';
+    this.iconColorPortfolio = 'rgb(121, 110, 110)';
+  }
+  showMenu() {
+    this.toggle = !this.toggle;
   }
 }

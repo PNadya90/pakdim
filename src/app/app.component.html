@@ -9,9 +9,22 @@
 
 <body>
   <div class="container-CV">
+    <div class="menu-opened" *ngIf="toggle"></div>
+    <div class="menu-area" *ngIf="toggle">
+      <div class="close-icon" (click)="showMenu()">
+        <i class="bi bi-x-lg"></i>
+      </div>
+      <div class="menu">
+        <h2 >MENU</h2>
+        <hr>
+        <div class="navbar-btn" >About me</div>
+        <div class="navbar-btn" >My portfolio</div>
+        <div class="navbar-btn" >Download my CV</div>
+      </div >
+    </div>
     <div class="info-area">
       <div class="nav-area">
-        <div class="side-bar-icon">
+        <div class="menu-icon" (click)="showMenu()">
           <i class="bi bi-list"></i>
         </div>
         <div class="side-icons">
