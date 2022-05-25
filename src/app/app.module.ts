@@ -14,6 +14,7 @@ import { TileViewComponent } from './tile-view/tile-view.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppEventList} from './event-list/event-list.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
     CsDropdownComponent,
     TileViewComponent,
     AppEventList,
-    AboutMeComponent
+    AboutMeComponent,
+    PortfolioComponent
   ],
 
   imports: [

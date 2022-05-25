@@ -1,0 +1,26 @@
+.title {
+    text-align: center;
+}
+.portfolio-container{
+    position: relative;
+    height: 500px;
+    overflow:hidden;
+    .items-container {
+        overflow: auto;
+        .img-container {
+            padding-bottom: 10%;
+            .portfolio-item {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 3%;
+                img {
+                    width: 100%;
+                    position: relative;
+                    margin: 5px;
+                }
+            }
+        }
+    }
+   
+}

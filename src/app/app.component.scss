@@ -40,7 +40,7 @@ body {
                     flex-direction: column;
 
                     .about-icon {
-                        color: #FF5D5D;
+                        // color: #FF5D5D;
                     }
 
                     .portfolio-icon {
@@ -87,7 +87,6 @@ body {
                 margin: 40px 0;
                 padding: 0 5px 0 35px;
                 overflow: hidden;
-                position: relative;
             }
 
 
@@ -145,6 +144,8 @@ body {
                 .description-area {
                     height: 100%;
                     width: 100%;
+                    margin: 0;
+                    position: relative;
                 }
             }
 
