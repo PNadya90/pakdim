@@ -1,26 +1,47 @@
 .title {
     text-align: center;
 }
-.portfolio-container{
+
+.portfolio-container {
     position: relative;
-    height: 500px;
-    overflow:hidden;
+    height: 450px;
+    overflow: auto;
+
     .items-container {
-        overflow: auto;
-        .img-container {
-            padding-bottom: 10%;
-            .portfolio-item {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                margin: 3%;
+
+        .items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 3%;
+
+            img {
+                width: 100%;
+                position: relative;
+                margin: 5px;
+            }
+        }
+
+    }
+
+}
+
+.portfolio-container::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+}
+
+@media all and (max-width:700px) {
+    .portfolio-container{
+        height: 700px;
+        margin: 5%;
+
+        .items-container {
+            .items {
                 img {
-                    width: 100%;
-                    position: relative;
-                    margin: 5px;
+                    width: 150%;
                 }
             }
         }
     }
-   
 }
