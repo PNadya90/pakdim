@@ -12,6 +12,7 @@ export class AppComponent {
   iconColorAbout = '#FF5D5D';
   iconColorPortfolio = 'rgb(121, 110, 110)';
   toggle = false;
+
   showPortfolio() {
     this.summary = false;
     this.portfolio = true;
@@ -35,7 +36,7 @@ export class AppComponent {
     this.toggle = !this.toggle;
   }
 
-  downloadCV(){
+  showCV(){
     window.open('./assets/CV_Nadya.pdf','_blank');
   }
 }
