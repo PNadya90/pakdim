@@ -1,10 +1,12 @@
 .title {
+    margin: 3%;
 }
 
 .portfolio-container {
     position: relative;
     height: 450px;
     overflow: auto;
+    margin: 3%;
 
     .items-container {
 
@@ -12,7 +14,6 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            margin: 3%;
             position: relative;
 
             .img-div-container {
@@ -109,26 +110,28 @@
             .items {
                 .img-div-container {
                     width: 100%;
+
                     .item-info {
                         height: 250px;
                     }
+
                     .item-info {
                         background-color: white;
                         opacity: 0.6;
-    
+
                         .info {
                             display: block;
                             color: black;
                             font-size: 15px;
                         }
-    
+
                     }
 
                     .item-info:hover {
                         .info {
                             font-size: 15px;
                         }
-    
+
                     }
 
                     .img-div1 {
