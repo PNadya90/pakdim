@@ -27,7 +27,8 @@ body {
             .close-icon {
                 font-size: 30px;
                 position: absolute;
-                margin-left: 75%;
+                margin-left: 85%;
+                margin-top:5%;
             }
 
             .menu {
@@ -71,15 +72,6 @@ body {
                     text-align: center;
                     display: flex;
                     flex-direction: column;
-
-                    .about-icon {
-                        // color: #FF5D5D;
-                    }
-
-                    .portfolio-icon {
-                        color: rgb(121, 110, 110);
-                    }
-
                     .cv-icon {
                         color: rgb(121, 110, 110);
                     }
@@ -150,7 +142,7 @@ body {
             .info-area {
                 position: relative;
                 display: flex;
-                height: 95%;
+                height: 100%;
                 padding: 0;
                 flex-wrap: wrap;
 
@@ -172,6 +164,7 @@ body {
                         margin: 0;
                         flex-direction: row;
                         justify-content: space-around;
+                        align-items: center;
                     }
 
                 }
@@ -182,11 +175,10 @@ body {
                 }
 
                 .description-area {
-                    height: 110%;
+                    height: 100%;
                     width: 100%;
-                    margin: 0;
+                    margin: auto;
                     position: relative;
-                    justify-content: flex-start;
                 }
             }
 

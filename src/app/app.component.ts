@@ -12,7 +12,7 @@ export class AppComponent {
   iconColorAbout = '#FF5D5D';
   iconColorPortfolio = 'rgb(121, 110, 110)';
   toggle = false;
-
+  display: string | undefined;
   showPortfolio() {
     this.summary = false;
     this.portfolio = true;
@@ -20,6 +20,9 @@ export class AppComponent {
     this.iconColorPortfolio = '#FF5D5D';
     if (this.toggle) {
       this.showMenu()
+    }
+    if (window.innerWidth < 700) {
+      this.display = 'none';
     }
   }
 
@@ -29,14 +32,17 @@ export class AppComponent {
     this.iconColorAbout = '#FF5D5D';
     this.iconColorPortfolio = 'rgb(121, 110, 110)';
     if (this.toggle) {
-      this.showMenu()
+      this.showMenu();
+    }
+    if (window.innerWidth < 700) {
+      this.display = 'flex';
     }
   }
   showMenu() {
     this.toggle = !this.toggle;
   }
 
-  showCV(){
-    window.open('./assets/CV_Nadya.pdf','_blank');
+  showCV() {
+    window.open('./assets/CV_Nadya.pdf', '_blank');
   }
 }
