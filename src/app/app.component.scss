@@ -111,6 +111,7 @@ body {
                 margin: 40px 0;
                 padding: 0 5px 0 35px;
                 overflow: hidden;
+
             }
 
 
@@ -175,10 +176,15 @@ body {
                 }
 
                 .description-area {
-                    height: 100%;
+                    height: calc(100% - 50px);
                     width: 100%;
-                    margin: auto;
+                    margin-top: 50px;
+                    display: block;
+                    
                     position: relative;
+                    .portfolio{
+                        height: 100%;
+                    }
                 }
             }
 
