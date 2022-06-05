@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<body> 
+<div class="container">
   <div class="pages-header">
-    <input class="search-url" placeholder="URL">
-    <button class="btn-go">GO</button>
+    <!-- <input class="search-url" placeholder="URL">
+    <button class="btn-go">GO</button> -->
   </div>
   <app-manegment-modul (onOpenAddWindow)="showWindow()" (onShowTileView)="showTile()" (onShowLIstView)="showList()" ></app-manegment-modul>
   <div class="viewer-container" >
@@ -20,7 +11,4 @@
   <div class="add-area" [@openWindow]="this.isExpanded && windowView==0? 'expanded' : 'initial'" [@openWindowWide]="this.isExpanded && windowView==1 ? 'expanded' : 'initial'">
     <app-add-window (onCloseWindow)="hideWindow()" [itemDetails]="selecteditem"></app-add-window>
   </div>
- 
-</body>
-
-</html>
+</div>

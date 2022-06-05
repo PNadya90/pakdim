@@ -1,0 +1,46 @@
+<div class="container-CV">
+    <div class="menu-opened" *ngIf="toggle"></div>
+    <div class="menu-area" *ngIf="toggle">
+      <div class="close-icon" (click)="showMenu()">
+        <i class="bi bi-x-lg"></i>
+      </div>
+      <div class="menu">
+        <h2 >MENU</h2>
+        <hr>
+        <div class="navbar-btn" (click)="showAbout()">About me</div>
+        <div class="navbar-btn" (click)="showPortfolio()">My portfolio</div>
+        <div class="navbar-btn" (click)="showCV()">My CV</div>
+      </div >
+    </div>
+    <div class="info-area">
+      <div class="nav-area">
+        <div class="menu-icon" (click)="showMenu()">
+          <i class="bi bi-list"></i>
+        </div>
+        <div class="side-icons">
+          <div class="about-icon" (click)="showAbout()" [ngStyle]="{'color': iconColorAbout}"> 
+            <i class="bi bi-person-circle"></i>
+          </div>
+          <div class="portfolio-icon" (click)="showPortfolio()" [ngStyle]="{'color': iconColorPortfolio}">
+            <i class="bi bi-briefcase"></i>
+          </div>
+          <div class="cv-icon">
+            <i class="bi bi-cloud-download" (click)="showCV()"></i>
+          </div>
+        </div>
+
+     
+      </div>
+      <div class="avatar-area" [ngStyle]="{'display': display }">
+        <div class="name-area">
+          <h1>Nadya Pak</h1>
+          <h3>Front-End Developer</h3>
+          <h3>1 year experience</h3>
+        </div>
+      </div>
+      <div class="description-area">
+        <app-about-me *ngIf="summary"></app-about-me>
+        <app-portfolio *ngIf="!summary" class="portfolio"></app-portfolio>
+      </div>
+    </div>
+  </div>

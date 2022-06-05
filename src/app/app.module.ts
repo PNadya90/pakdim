@@ -3,38 +3,28 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { ManegmentModulComponent } from './manegment-modul/manegment-modul.component';
-import { InfoComponent } from './info/info.component';
+import { AppComponent } from './app.component'; 
 import { HttpClientModule } from '@angular/common/http';
-import { DataInfoService } from './data-info.service';
-import { AddWindowComponent } from './add-window/add-window.component';
-import { CsDropdownComponent } from './utils/cs-dropdown/cs-dropdown.component';
-import { TileViewComponent } from './tile-view/tile-view.component';
-import { ReactiveFormsModule } from '@angular/forms';
-import { AppEventList} from './event-list/event-list.component';
-import { AboutMeComponent } from './about-me/about-me.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
+import { DataInfoService } from './projects/listmod/data-info.service'; 
+import { ReactiveFormsModule } from '@angular/forms'; 
+import { StanleyModule } from './projects/stanley/stanley.module';
+import { HomeComponent } from './home/home.component';
+import { HomeModule } from './home/home.module';
+import { Ta9Module } from './projects/ta9/ta9.module';
+import { EventListModule } from './projects/listmod/event-list.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ManegmentModulComponent,
-    InfoComponent,
-    AddWindowComponent,
-    CsDropdownComponent,
-    TileViewComponent,
-    AppEventList,
-    AboutMeComponent,
-    PortfolioComponent
+    AppComponent
   ],
 
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    ReactiveFormsModule,
+    StanleyModule,
+    HomeModule,
+    Ta9Module,
+    EventListModule
   ],
   providers: [DataInfoService],
   bootstrap: [AppComponent]

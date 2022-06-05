@@ -1,0 +1,27 @@
+<div class="card" style="width: 600px;">
+    <span>
+      <h1>Hi user your id is: <h2>{{id}}</h2> </h1>
+      <h3>status: {{status}}</h3>
+    </span>
+    <img src="\assets\dog.png" class="card-img-top" alt="img">
+    <div class="card-body">
+      <h2 class="card-title">Welcome to our website</h2>
+      <p class="card-text">While you looking at this dog we keep tracking you presense at website. If you will change
+        tab to admin page tracking your presense will be stoped and you state will be OFFLINE. Thank you.</p>
+    </div>
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            More inormation about me:
+          </mat-panel-title>
+          <mat-panel-description>
+            press here
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>Screen resolution: {{screen}}</p>
+        <p>local time: {{localTime|date:'dd/MM/YYYY hh:mm'}}</p>
+        <p>ip address is: {{ip}}</p>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
