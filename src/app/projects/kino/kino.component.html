@@ -1,0 +1,16 @@
+  <div class="content-area">
+    <header>
+      <img src="\assets\img\kino.jpg" alt="" class="logo" routerLink="/">
+    <nav>
+      <ul class="nav-area">
+        <li><a routerLink="/kino">Home</a></li>
+        <li><a  *ngIf="loggBtnService.isLoggedIn" routerLink="./userAccount">User account</a></li>
+      </ul>
+    </nav>
+    <a class="btn-area" *ngIf="!loggBtnService.isLoggedIn" [routerLink]="'./login'">Login</a>
+    <a class="btn-area" *ngIf="loggBtnService.isLoggedIn" [routerLink]="'./login'" (click)="logoutUser()">Logout</a>
+  </header> 
+    <router-outlet></router-outlet>
+  </div> 
+ 
+

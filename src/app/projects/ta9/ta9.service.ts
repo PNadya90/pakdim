@@ -12,21 +12,21 @@ export class Ta9Service {
 constructor(private http:HttpClient){};
 
 postUserInfo( client: clientInfo){
-  return this.http.post<clientInfo>('http://s1.pakdim.com/clients', client)
+  return this.http.post<clientInfo>('https://s1.pakdim.com/clients', client)
 };
 
 getIPAddress(){
-return this.http.get('http://api.ipify.org/?format=json')
+return this.http.get('https://s1.pakdim.com/myIp')
 };
 
 keepAlive(id:any){
-return this.http.patch('http://s1.pakdim.com/clients/'+ id + '/keepAlive',null)
+return this.http.patch('https://s1.pakdim.com/clients/'+ id + '/keepAlive',null)
 };
 getMessage():Observable<MyType>{
- return this.http.get<MyType>('http://s1.pakdim.com/messages')
+ return this.http.get<MyType>('https://s1.pakdim.com/messages')
 };
 getClientInfo(){
-  return this.http.get('http://s1.pakdim.com/clients');
+  return this.http.get('https://s1.pakdim.com/clients');
 }
 
 }

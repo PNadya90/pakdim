@@ -1,0 +1,41 @@
+h2 {
+  font-size: 30px;
+  color: aliceblue;
+  text-align: center;
+}
+
+.allFavFilms-area{
+  display:flex;
+  align-items:flex-end;
+  flex-wrap: wrap;
+  margin: 70px 70px 0 70px;
+}
+
+.film-area { 
+  margin: 10px;
+  position: relative;
+  width: 150px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.poster {
+  width: 150px;
+}
+.heart {
+  cursor: pointer;
+  width: 22px;
+  stroke: red;
+  fill:red;
+  stroke-width: 40px;
+}
+.empty{
+  stroke: red;
+  fill: white;
+
+}
+.like{
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+}

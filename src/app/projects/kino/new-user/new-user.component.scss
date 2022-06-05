@@ -1,0 +1,47 @@
+h2 {
+    font-size: 30px;
+    color: aliceblue;
+    text-align: center;
+
+}
+
+h3 {
+    color: rgb(205, 140, 235);
+}
+
+.form-area {
+    width: 500px;
+    height: 100%;
+    position: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 100px;
+}
+
+.form-label {
+    color: aliceblue;
+}
+
+.new-user-btn {
+    background-color: aliceblue;
+    color: black;
+}
+
+.btn-area {
+    cursor: pointer;
+    color: aliceblue;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background: rgb(205, 140, 235);
+
+}
+
+p {
+    color: red;
+}

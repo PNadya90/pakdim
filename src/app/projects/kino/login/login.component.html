@@ -1,0 +1,28 @@
+<div>
+    <div>
+        <h2>
+            Please enter your login and password and enjoy your favourite films:
+        </h2>
+        <div class="form-area">
+            <form [formGroup]="logIn" (ngSubmit)="onSubmit()">
+                <div class="mb-3">
+                    <label class="form-label">Login</label>
+                    <input type="text" class="form-control"  formControlName="userLogin" placeholder="Your login" >
+                    <p *ngIf="controls['userLogin'].touched && controls['userLogin'].errors ">You need to put login min 4 letter</p>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" placeholder="Your pasword" formControlName="userPassword">
+                    <p *ngIf="controls['userPassword'].touched && controls['userPassword'].errors ">You need to put password min 3 letter</p>
+                </div>
+                <button type="submit" class="btn btn-light" >Log in</button>
+                <p *ngIf="noUser">No such user. You can create a new one.</p>
+                <hr style="color: aliceblue">
+                <a class="btn-area" (click)="newUser = !newUser">Create new user</a>
+            </form>
+        </div>
+    </div>
+    <div *ngIf="newUser">
+        <app-new-user></app-new-user>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+h2 {
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h3 {
+    max-width: 300px;
+}
+
+.content {
+    display: block;
+    margin: auto;
+    flex-wrap: wrap;
+    border: 2px solid rgb(205, 140, 235);
+    border-radius: 20px;
+    background-image: linear-gradient(rgba(126, 66, 103, 0.7), rgba(97, 127, 167, 0.7));
+    max-width: 1000px;
+}
+
+.film-area {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.poster-area {
+    margin: auto;
+    padding: 15px 0;
+    position: relative;
+}
+
+.description-area {
+    padding: 20px;
+    color: aliceblue;
+    display: grid;
+}
+
+.plot-area {
+    margin: 15px;
+    padding: 5px;
+    max-width: 1000px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+img {
+    width: 250px;
+    max-width: 300px;
+}
+
+.heart-area {
+    position: absolute;
+    right: 0;
+    bottom: 45px;
+}
+
+.heart {
+    cursor: pointer;
+    width: 30px;
+    stroke: red;
+    fill: red;
+    stroke-width: 40px;
+
+}
+
+.empty {
+    fill: none;
+}
+
+.like {
+    position: relative;
+    bottom: 2px;
+    right: 2px;
+}

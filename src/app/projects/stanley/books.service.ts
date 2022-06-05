@@ -10,23 +10,23 @@ export class BooksService {
    constructor(private http: HttpClient) { }
 
    getTable() {
-      return this.http.get<MyType>('http://s1.pakdim.com/publicApi/books');
+      return this.http.get<MyType>('https://s1.pakdim.com/publicApi/books');
    }
 
    postRequest(id: any, countToBuy: any) {
-      return this.http.post<MyType>('http://s1.pakdim.com/publicApi/buyBook/' + id + '?qty=-' + countToBuy, null)
+      return this.http.post<MyType>('https://s1.pakdim.com/publicApi/buyBook/' + id + '?qty=-' + countToBuy, null)
    }
 
    getMessage(idOrder: number) {
-      return this.http.get<{ id: number | undefined, status: string | undefined, message: string | null | undefined }>('http://s1.pakdim.com/publicApi/order/' + idOrder)
+      return this.http.get<{ id: number | undefined, status: string | undefined, message: string | null | undefined }>('https://s1.pakdim.com/publicApi/order/' + idOrder)
    }
 
    putBook(newBook: { bookName: any; authorName: any; quantity: any; }) {
-      return this.http.put('http://s1.pakdim.com/publicApi/addBook', newBook)
+      return this.http.put('https://s1.pakdim.com/publicApi/addBook', newBook)
    }
 
    searchBook (bookName: string | undefined) {
-      return this.http.get<MyType>('http://s1.pakdim.com/publicApi/books/' + bookName)
+      return this.http.get<MyType>('https://s1.pakdim.com/publicApi/books/' + bookName)
    }
 
 }

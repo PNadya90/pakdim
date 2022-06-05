@@ -1,0 +1,37 @@
+<div class="all">
+<h2> Film's Card:</h2>
+<div class="content">
+    <div class="film-area">
+        <div class="poster-area">
+            <img src={{filmInfo?.Poster}} (error)="onErr($event)">
+            <div class="heart-area">
+                <a class="like" (click)="likeFilm(filmInfo?.imdbID)">
+                    <svg class="heart" [ngClass]="{'empty': !liked }" viewBox="-5 0 523 512">
+                        <path
+                            d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                    </svg>
+                </a>
+            </div>
+            <div>
+                <app-raiting [raiting]="filmInfo?.imdbRating"></app-raiting>
+            </div>
+        </div>
+        <div *ngIf="filmInfo" class="description-area">
+            <h3>{{filmInfo.Title}}, {{filmInfo.Year}}.
+            </h3>
+            <h4>{{filmInfo.Type}}</h4>
+            <div>Runtime: {{filmInfo.Runtime}}.</div>
+            <div>Genre: {{filmInfo.Genre}}.</div>
+            <div>Country: {{filmInfo.Country}}.</div>
+            <div>Language: {{filmInfo.Language}}.</div>
+            <div>Director: {{filmInfo.Director}}.</div>
+            <div>Actors: {{filmInfo.Actors}}.</div>
+            <div>Awards: {{filmInfo.Awards}}.</div>
+        </div>
+    </div>
+    <div class="plot-area">
+        <h3>Plot:</h3>
+        {{filmInfo?.Plot}}
+    </div>
+</div>
+</div>

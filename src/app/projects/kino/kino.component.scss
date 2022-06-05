@@ -1,0 +1,52 @@
+.content-area {
+    background-image: linear-gradient(rgba(126, 66, 103, 0.7), rgba(97, 127, 167, 0.7)),
+        url("/assets/img/background.jpg");
+    height: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    min-width:min-content;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 70px;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo {
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.nav-area li {
+    display: inline-block;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+
+.nav-area li a {
+    color: aliceblue;
+}
+
+.nav-area li a:hover {
+    color: rgb(205, 140, 235);
+}
+
+.btn-area {
+    cursor: pointer;
+    color: aliceblue;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background: rgb(205, 140, 235);
+}

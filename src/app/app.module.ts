@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { HomeModule } from './home/home.module';
 import { Ta9Module } from './projects/ta9/ta9.module';
 import { EventListModule } from './projects/listmod/event-list.module';
+import { KinoModule } from './projects/kino/kino.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { EventListModule } from './projects/listmod/event-list.module';
     StanleyModule,
     HomeModule,
     Ta9Module,
-    EventListModule
+    EventListModule,
+    KinoModule
   ],
   providers: [DataInfoService],
   bootstrap: [AppComponent]

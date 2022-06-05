@@ -1,0 +1,48 @@
+.raiting-area {
+    position: relative;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.raiting-value {
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    margin-left: 10px ;
+}
+
+.stars-area {
+    position: relative;
+    width: max-content;
+   
+}
+
+.stars-area::before {
+    content: "★★★★★★★★★★";
+    display: block;
+    color: aliceblue;
+    width: max-content;
+}
+
+.raiting-active {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.raiting-active::before {
+    content: "★★★★★★★★★★";
+    position: absolute;
+    color: #ffd300;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+}

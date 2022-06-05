@@ -1,0 +1,23 @@
+
+<div class="form-area">
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label" >Please create your login</label>
+        <input type="text" class="form-control"  formControlName='login' placeholder="Your login">
+        <p *ngIf="controls['login'].touched && controls['login'].errors ">You need to put login min 4 letter</p>
+    </div>
+    <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Create your password</label>
+        <input type="password" class="form-control" formControlName='password'  placeholder="Your pasword">
+        <p *ngIf="controls['password'].touched && controls['password'].errors ">You need to put password min 3 letter</p>
+    </div>
+    <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Confirm your password</label>
+        <input type="password" class="form-control" formControlName='checkPassword'  placeholder="Your pasword">
+        <p *ngIf="controls['checkPassword'].touched && controls['checkPassword'].errors ">Confirm password do not match with password</p> 
+    </div>
+    <h3 *ngIf="registred"> Now you have an account. Please login.
+    </h3>
+    <button type="submit" class="btn btn-light">Register</button>
+</form>
+</div>
