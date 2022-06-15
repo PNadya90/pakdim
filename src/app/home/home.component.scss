@@ -116,12 +116,6 @@
     }
 
 @media all and (max-width:700px) {
-    body {
-        width: 100%;
-        height: 100vh;
-        background-color: #FFE3A9;
-        color: white;
-
         .container-CV {
             height: 100%;
             position: relative;
@@ -135,12 +129,11 @@
                 width: 100%;
             }
             .info-area {
-                position: relative;
                 display: flex;
                 height: 100%;
                 padding: 0;
                 flex-wrap: wrap;
-
+                flex-direction: column;
                 .nav-area {
                     position: fixed;
                     z-index: 1;
@@ -165,17 +158,13 @@
                 }
 
                 .avatar-area {
-                    width: 100%;
-                    height: 100%;
                 }
 
                 .description-area {
                     height: calc(100% - 50px);
                     width: 100%;
                     margin-top: 50px;
-                    display: block;
-                    
-                    position: relative;
+                    position: fixed;
                     .portfolio{
                         height: 100%;
                     }
@@ -184,5 +173,5 @@
 
         }
     }
-}
+
 

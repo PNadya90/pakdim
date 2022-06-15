@@ -20,9 +20,6 @@ export class HomeComponent {
     if (this.toggle) {
       this.showMenu()
     }
-    if (window.innerWidth < 700) {
-      this.display = 'none';
-    }
   }
 
   showAbout() {
