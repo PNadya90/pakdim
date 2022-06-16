@@ -2,10 +2,19 @@
     border: 3px solid #fff;
     padding: 20px;
     color: black;
+    .float-child {
+        width: 50%;
+        float: left;
+        padding: 20px;
+    }  
 }
 
-.float-child {
-    width: 50%;
-    float: left;
-    padding: 20px;
-}  
+@media all and (max-width:700px) {
+    .float-container {
+        display: flex;
+        flex-direction: column;
+        .float-child {
+            width: 100%;
+        }
+    }
+}
