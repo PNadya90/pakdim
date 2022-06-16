@@ -112,12 +112,8 @@
                 margin-bottom: 100px;
                 .img-div-container {
                     width: 100%;
-
                     .item-info {
                         height: 250px;
-                    }
-
-                    .item-info {
                         background-color: white;
                         opacity: 0.6;
 
@@ -155,4 +151,45 @@
             }
         }
     }
+}
+
+
+@media all and (max-height:500px) {
+    .portfolio-container {
+    
+        .items-container {
+    
+            .items {
+                .img-div-container {
+    
+                    .img-div1 {
+                        height: 200px;
+    
+                    }
+    
+                    .item-info {
+                        height: 200px;
+    
+                    }
+    
+            
+                    .img-div2 {
+                        height: 200px;
+                    }
+    
+                    .img-div3 {
+                        height: 200px;
+                    }
+    
+    
+                    .img-div4 {
+                        height: 200px;
+                    }
+                }
+            }
+    
+        }
+    
+    }
+
 }

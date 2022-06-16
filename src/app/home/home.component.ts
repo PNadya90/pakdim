@@ -12,6 +12,7 @@ export class HomeComponent {
   iconColorPortfolio = 'rgb(121, 110, 110)';
   toggle = false;
   display: string | undefined;
+  neon:string | undefined;
   showPortfolio() {
     this.summary = false;
     this.portfolio = true;
@@ -29,9 +30,6 @@ export class HomeComponent {
     this.iconColorPortfolio = 'rgb(121, 110, 110)';
     if (this.toggle) {
       this.showMenu();
-    }
-    if (window.innerWidth < 700) {
-      this.display = 'flex';
     }
   }
   showMenu() {

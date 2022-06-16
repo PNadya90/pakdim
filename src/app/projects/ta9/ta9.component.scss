@@ -1,9 +1,12 @@
-button{
-    margin: 5px;
-
+container-user{
+    button{
+        margin: 5px;
+    
+    }
+    
+    .navigationBtn{
+    float: left;
+    position: relative;
+    }
 }
 
-.navigationBtn{
-float: left;
-position: relative;
-}
