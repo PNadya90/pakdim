@@ -1,16 +1,22 @@
 .about-me {
     margin: 3%;
+    text-align: justify;
+
     .photo {
-        width: 100%;
+        width: 60%;
         height: 250px;
-        background: url("/assets/IMG_4077.jpg");
+        background: url("/assets/Photo_blue.jpg");
         background-size: cover;
-        background-position: center;
+        background-position: top;
         display: none;
+    }
+
+    .description {
+        margin-top: 15px;
     }
 }
 
-@media all and (max-width:700px) {
+@media all and (max-width:750px) {
     .about-me {
         .photo {
             display: block;

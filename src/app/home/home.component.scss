@@ -1,7 +1,7 @@
     .container-CV {
         height: 100vh;
         position: relative;
-        background-color: #FFE3A9;
+        background-color: #363062;
         color: white;
 
         .menu-opened {
@@ -19,7 +19,7 @@
             z-index: 2;
             height: 100%;
             background-color: white;
-            color: #FF5D5D;
+            color: rgb(119 56 206);
 
             .close-icon {
                 font-size: 30px;
@@ -57,7 +57,7 @@
                     height: 50px;
                     font-size: 25px;
                     text-align: center;
-                    background-color: #FF5D5D;
+                    background-color: rgb(119 56 206);
                     border: none;
                     color: white;
                 }
@@ -78,10 +78,10 @@
 
             .avatar-area {
                 width: 40%;
-                height: 100%;
-                background: url("/assets/IMG_4077.jpg");
+                height: 105%;
+                background: url("/assets/Photo_blue.jpg");
                 background-size: cover;
-                background-position: center;
+                background-position: top;
                 position: relative;
                 box-shadow: 0 32px 84px 0 rgb(0 0 0 / 50%);
 
@@ -91,7 +91,7 @@
                     left: 0;
                     right: 0;
                     background-color: white;
-                    color: #eb99ae;
+                    color: #4D4C7D;
                     opacity: 0.9;
                     text-align: center;
                     display: flex;
@@ -101,21 +101,20 @@
 
             .description-area {
                 width: 60%;
-                background-color: #e7afaf;
+                background-color: #4D4C7D;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 margin: 40px 0;
                 padding: 0 5px 0 35px;
                 overflow: hidden;
-
             }
 
 
         }
     }
 
-@media all and (max-width:700px) {
+@media all and (max-width:750px) {
         .container-CV {
             height: 100%;
             position: relative;
@@ -174,4 +173,15 @@
         }
     }
 
-
+    @media all and (max-height:500px) {
+        .container-CV {
+            .avatar-area{
+            .name-area{
+                h1,h3{
+                    line-height:0.8;
+                }
+           
+            }
+            }
+        }
+    }
