@@ -11,5 +11,7 @@ export class DimComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  redirectTo(path:string){
+    window.open(path,"_self");
+  }
 }

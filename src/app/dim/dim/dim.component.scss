@@ -17,7 +17,6 @@
             color: yellow;
         }
     }
-
     .rotation {
         transform-box: fill-box;
         transform-origin: center;
@@ -141,4 +140,13 @@
             stroke:yellow;
            }
      }
+}
+@media all and (min-width:600px) {
+    .dim-container {
+        .links-menu {
+            .link-item {
+                font-size: 35px;
+            }
+        }
+    }
 }
