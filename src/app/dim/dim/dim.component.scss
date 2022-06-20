@@ -5,6 +5,18 @@
     justify-content: center;
     align-items: center;
     background-color: #2cbfbf;
+    .links-menu{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        .link-item {
+            font-size: 25px;
+            margin: 10px;
+            color: yellow;
+        }
+    }
 
     .rotation {
         transform-box: fill-box;
