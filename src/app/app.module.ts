@@ -13,6 +13,7 @@ import { HomeModule } from './home/home.module';
 import { Ta9Module } from './projects/ta9/ta9.module';
 import { EventListModule } from './projects/listmod/event-list.module';
 import { KinoModule } from './projects/kino/kino.module';
+import { DimModule } from './dim/dim/dim.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { KinoModule } from './projects/kino/kino.module';
     HomeModule,
     Ta9Module,
     EventListModule,
-    KinoModule
+    KinoModule,
+    DimModule
   ],
   providers: [DataInfoService],
   bootstrap: [AppComponent]

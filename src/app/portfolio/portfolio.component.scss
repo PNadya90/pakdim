@@ -4,9 +4,9 @@
 
 .portfolio-container {
     position: relative;
-    height: 520px;
+    height: 100%;
     overflow: auto;
-
+    scrollbar-width: none;
     .items-container {
         position: relative;
 

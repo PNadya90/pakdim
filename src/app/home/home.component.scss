@@ -78,7 +78,7 @@
 
             .avatar-area {
                 width: 40%;
-                height: 105%;
+                height: 100%;
                 background: url("/assets/Photo_blue.jpg");
                 background-size: cover;
                 background-position: top;
@@ -90,9 +90,7 @@
                     bottom: 0;
                     left: 0;
                     right: 0;
-                    background-color: white;
-                    color: #4D4C7D;
-                    opacity: 0.9;
+                    color: #dddddd;                    
                     text-align: center;
                     display: flex;
                     flex-direction: column;
@@ -104,10 +102,10 @@
                 background-color: #4D4C7D;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
                 margin: 40px 0;
                 padding: 0 5px 0 35px;
-                overflow: hidden;
+                overflow: auto;
+                scrollbar-width: none;
             }
 
 
@@ -157,7 +155,7 @@
                 }
 
                 .description-area {
-                    height: calc(100% - 50px);
+                    height: 100vh;
                     width: 100%;
                     margin-top: 50px;
                     position: fixed;
@@ -172,17 +170,54 @@
 
     @media all and (max-height:500px) {
         .container-CV {
-            .avatar-area{
+            .info-area{
+                padding: 0;
+                height: 100vh;
+                .nav-area{
+                    height: 100%;
+                    margin: 0;
+                }
+            }            
+            height: 100%;
+            .avatar-area{ 
             .name-area{
                 h1,h3{
                     line-height:0.8;
                 }
            
             }
+           
             }
             .description-area {
              font-size: 10px;
              justify-content: flex-start;
             }
+        }
+    }
+    @media all and (max-width:750px) and (max-height:500px) {
+        .container-CV {
+            .info-area{
+                .nav-area{
+                    height: initial;
+                }
+                .description-area {
+                    width: 100%;
+                }
+            }
+            
+        }
+    }
+    @media all and (min-width:750px) and (max-height:500px) {
+        .container-CV {
+            .info-area{
+                .nav-area{
+                    height: initial;
+                }
+                .description-area {
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+            
         }
     }
