@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DimComponent } from './dim/dim/dim.component';
+import { DimComponent } from './dim/dim.component';
 import { HomeComponent } from './home/home.component';
 import { FilmDescriptionComponent } from './projects/kino/film-description/film-description.component';
 import { HomePageComponent } from './projects/kino/home-page/home-page.component';

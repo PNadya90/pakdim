@@ -13,7 +13,7 @@ import { HomeModule } from './home/home.module';
 import { Ta9Module } from './projects/ta9/ta9.module';
 import { EventListModule } from './projects/listmod/event-list.module';
 import { KinoModule } from './projects/kino/kino.module';
-import { DimModule } from './dim/dim/dim.module';
+import { DimModule } from './dim/dim.module';
 
 @NgModule({
   declarations: [

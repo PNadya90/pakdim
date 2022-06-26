@@ -1,0 +1,123 @@
+.rotation {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: rot 3s infinite linear;
+}
+.rotation-fast {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: rot 1s infinite linear;
+}
+.outerPath {
+    stroke: yellow;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    stroke-width: 2px;
+    animation: dashing 8s linear infinite alternate;
+}
+.snake{
+    stroke: black;
+    stroke-dasharray: 5;
+    stroke-dashoffset: 20;
+    animation: dashing 8s linear infinite alternate;  
+}
+.blinking{
+    fill:rgb(89, 202, 247);
+    animation: blinkColor 3s linear infinite -1s;
+}
+.blinking2{
+    stroke: #000000;
+    animation: blinkColor2 2s linear infinite -1s;
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dashing {
+    to {
+        stroke-dashoffset: -500;
+    }
+}
+@keyframes blinkColor {
+   0% {
+    fill:#2a3443;
+   }
+   10.9% {
+    fill:#2a3443;
+   }
+   11%{
+    fill:white;
+   }
+   19.9%{
+    fill: white;
+   }
+   20%{
+    fill:rgb(215, 137, 70);
+   }
+   29.9%{
+    fill:rgb(215, 137, 70);
+   }
+   30%{
+    fill:#7700ff;
+   }
+   39.9%{
+    fill:#7700ff;
+   }
+   40%{
+    fill:grey;
+   }       
+   49.9%{
+    fill:grey;
+   }
+   50%{
+    fill:peru;
+   }
+   59.9%{
+    fill:peru;
+   }
+   60%{
+    fill:red;
+   }
+   69.9%{
+    fill:red;
+   }
+   70%{
+    fill: black;
+   }
+   79.9%{
+    fill: black;
+   }
+   80%{
+    fill: yellow;
+   }
+   89.9%{
+    fill: yellow;
+   }
+   90%{
+    fill: rgb(76, 144, 234);
+   }
+   100%{
+    fill: rgb(76, 144, 234);
+   }
+}
+@keyframes blinkColor2 {
+    0% {
+        stroke:#000000;
+    }
+    49.9% {
+        stroke:#000000;
+       }
+    50% {
+        stroke:yellow;
+       }
+       100% {
+        stroke:yellow;
+       }
+ }

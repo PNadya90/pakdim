@@ -10,7 +10,7 @@ export class BooksService {
    constructor(private http: HttpClient) { }
 
    getTable() {
-      return this.http.get<MyType>('https://s1.pakdim.com/publicApi/books');
+      return this.http.get('https://s1.pakdim.com/publicApi/books');
    }
 
    postRequest(id: any, countToBuy: any) {
