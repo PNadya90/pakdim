@@ -31,7 +31,9 @@ export class MyHttpInterceptor implements HttpInterceptor {
     if(xToken){
       headers = headers.append('X-Auth-Token', xToken);
     }
-    headers = headers.append('client-id', clid);
+    if(clid){
+      headers = headers.append('client-id', clid);
+    }
     return headers;
   } 
 }
