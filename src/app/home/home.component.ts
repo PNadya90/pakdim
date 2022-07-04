@@ -37,6 +37,6 @@ export class HomeComponent {
   }
 
   showCV() {
-    window.open('./assets/CV_Nadya.pdf', '_blank');
+    window.open('./assets/Nadya_CV.pdf', '_blank');
   }
 }

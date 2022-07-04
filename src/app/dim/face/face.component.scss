@@ -1,0 +1,19 @@
+.photo-container{         
+    overflow: hidden;
+    position:absolute;
+    left: 13px;
+    top:19px;
+    .photo{
+        background-image: url("/assets/dimPhoto.jpg" ) ;
+        width:60px;
+        height: 100%;
+        border-radius:50px;
+        animation: disapearing 10s linear infinite;
+        &:hover{
+            animation:1;
+        }
+    }
+}
+.svg-container{
+    opacity: 0.1;
+}

@@ -3,8 +3,8 @@
       <img src="\assets\img\kino.jpg" alt="" class="logo" routerLink="/">
     <nav>
       <ul class="nav-area">
-        <li><a routerLink="/kino">Home</a></li>
-        <li><a  *ngIf="loggBtnService.isLoggedIn" routerLink="./userAccount">User account</a></li>
+        <li><a routerLink="/kino" class="home_btn">Home</a></li>
+        <li><a  class="userAccount_btn" *ngIf="loggBtnService.isLoggedIn" routerLink="./userAccount">User account</a></li>
       </ul>
     </nav>
     <a class="btn-area" *ngIf="!loggBtnService.isLoggedIn" [routerLink]="'./login'">Login</a>

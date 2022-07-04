@@ -6,7 +6,7 @@
     background-position: center;
     background-repeat: repeat-y;
     background-size: cover;
-    min-width:min-content;
+    min-width: min-content;
 }
 
 header {
@@ -30,14 +30,44 @@ header img {
     display: inline-block;
     padding: 0 15px;
     text-transform: uppercase;
+
+    .home_btn {
+        cursor: pointer;
+        color: aliceblue;
+        font-size: 16px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 10px 30px;
+        border-radius: 5px;
+        background: #cd8ceb;
+    }
+
+    .home_btn:hover {
+        background: linear-gradient(90deg, #aaa3db, #f441a5, #ffeb3b, #514f6e);
+        background-size: 400%;
+        // filter:blur(20px)
+    }
+
+    .userAccount_btn {
+        cursor: pointer;
+        color: aliceblue;
+        font-size: 16px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 10px 30px;
+        border-radius: 5px;
+        background: #cd8ceb;
+    }
+
+    .userAccount_btn:hover {
+        background: linear-gradient(90deg, #aaa3db, #f441a5, #ffeb3b, #514f6e);
+        background-size: 400%;
+    }
+
 }
 
 .nav-area li a {
     color: aliceblue;
-}
-
-.nav-area li a:hover {
-    color: rgb(205, 140, 235);
 }
 
 .btn-area {
@@ -49,4 +79,9 @@ header img {
     padding: 10px 30px;
     border-radius: 5px;
     background: rgb(205, 140, 235);
+}
+
+.btn-area:hover {
+    background: linear-gradient(90deg, #aaa3db, #f441a5, #ffeb3b, #514f6e);
+    background-size: 400%;
 }
