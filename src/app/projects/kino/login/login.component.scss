@@ -6,13 +6,8 @@ h2{
   }
 
 .form-area{
-    width: 500px;
-    height: 350px;
-    position: flex;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    display: flex;
+    justify-content: center;
     margin: auto;
     padding: 100px;
 }
@@ -31,7 +26,7 @@ color: black;
     font-size: 16px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding: 10px 30px;
+    padding: 10px;
     border-radius: 5px;
     background: rgb(205, 140, 235);
 
