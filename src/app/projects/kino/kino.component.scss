@@ -7,84 +7,80 @@
     background-repeat: repeat-y;
     background-size: cover;
     min-width: min-content;
-}
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 70px;
-}
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 70px;
 
-header img {
-    width: 50px;
-    height: 50px;
-}
+        .logo {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            border-radius: 25px;
+        }
 
-.logo {
-    cursor: pointer;
-    border-radius: 25px;
-}
 
-.nav-area li {
-    display: inline-block;
-    padding: 5px;
-    text-transform: uppercase;
+        .nav-area {
+            display: inline-block;
+            padding: 5px;
+            text-transform: uppercase;
+            margin: 5px;
+            .home_btn {
+                cursor: pointer;
+                color: aliceblue;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                padding: 10px;
+                border-radius: 5px;
+                background: #cd8ceb;
+                border: aliceblue;
+                margin: 5px;
+            }
 
-    .home_btn {
-        cursor: pointer;
-        color: aliceblue;
-        font-size: 16px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        padding: 10px;
-        border-radius: 5px;
-        background: #cd8ceb;
-        border: aliceblue;
+            .home_btn:hover {
+                background: linear-gradient(90deg, #aaa3db, #f441a5, #ffeb3b, #514f6e);
+                background-size: 400%;
+                // filter:blur(20px)
+            }
+
+            .userAccount_btn {
+                cursor: pointer;
+                color: aliceblue;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                padding: 10px;
+                border-radius: 5px;
+                background: #cd8ceb;
+                border: aliceblue;
+                margin: 5px;
+            }
+
+            .userAccount_btn:hover {
+                background: linear-gradient(90deg, #aaa3db, #f441a5, #ffeb3b, #514f6e);
+                background-size: 400%;
+            }
+
+            .btn-area {
+                cursor: pointer;
+                color: aliceblue;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                padding: 10px;
+                border-radius: 5px;
+                background: rgb(205, 140, 235);
+                border: aliceblue;
+                margin: 5px;
+                
+            }
+    
+            .btn-area:hover {
+                background: linear-gradient(90deg, #aaa3db, #f441a5, #ffeb3b, #514f6e);
+                background-size: 400%;
+            }
+
+        }
+
     }
-
-    .home_btn:hover {
-        background: linear-gradient(90deg, #aaa3db, #f441a5, #ffeb3b, #514f6e);
-        background-size: 400%;
-        // filter:blur(20px)
-    }
-
-    .userAccount_btn {
-        cursor: pointer;
-        color: aliceblue;
-        font-size: 16px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        padding: 10px;
-        border-radius: 5px;
-        background: #cd8ceb;
-        border: aliceblue;
-    }
-
-    .userAccount_btn:hover {
-        background: linear-gradient(90deg, #aaa3db, #f441a5, #ffeb3b, #514f6e);
-        background-size: 400%;
-    }
-
-}
-
-.nav-area li a {
-    color: aliceblue;
-}
-
-.btn-area {
-    cursor: pointer;
-    color: aliceblue;
-    font-size: 16px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding: 10px;
-    border-radius: 5px;
-    background: rgb(205, 140, 235);
-    border: aliceblue;
-}
-
-.btn-area:hover {
-    background: linear-gradient(90deg, #aaa3db, #f441a5, #ffeb3b, #514f6e);
-    background-size: 400%;
 }
