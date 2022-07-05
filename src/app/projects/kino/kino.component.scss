@@ -28,7 +28,7 @@ header img {
 
 .nav-area li {
     display: inline-block;
-    padding:15px;
+    padding: 5px;
     text-transform: uppercase;
 
     .home_btn {
@@ -37,9 +37,10 @@ header img {
         font-size: 16px;
         letter-spacing: 2px;
         text-transform: uppercase;
-        padding: 10px 30px;
+        padding: 10px;
         border-radius: 5px;
         background: #cd8ceb;
+        border: aliceblue;
     }
 
     .home_btn:hover {
@@ -54,9 +55,10 @@ header img {
         font-size: 16px;
         letter-spacing: 2px;
         text-transform: uppercase;
-        padding: 10px 30px;
+        padding: 10px;
         border-radius: 5px;
         background: #cd8ceb;
+        border: aliceblue;
     }
 
     .userAccount_btn:hover {
@@ -76,9 +78,10 @@ header img {
     font-size: 16px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding: 10px 30px;
+    padding: 10px;
     border-radius: 5px;
     background: rgb(205, 140, 235);
+    border: aliceblue;
 }
 
 .btn-area:hover {
