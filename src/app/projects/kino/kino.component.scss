@@ -27,7 +27,7 @@
             padding: 5px;
             text-transform: uppercase;
             margin: 5px;
-            .home_btn {
+            .btn {
                 cursor: pointer;
                 color: aliceblue;
                 letter-spacing: 2px;
@@ -39,45 +39,10 @@
                 margin: 5px;
             }
 
-            .home_btn:hover {
+            .btn:hover {
                 background: linear-gradient(90deg, #aaa3db, #f441a5, #ffeb3b, #514f6e);
                 background-size: 400%;
                 // filter:blur(20px)
-            }
-
-            .userAccount_btn {
-                cursor: pointer;
-                color: aliceblue;
-                letter-spacing: 2px;
-                text-transform: uppercase;
-                padding: 10px;
-                border-radius: 5px;
-                background: #cd8ceb;
-                border: aliceblue;
-                margin: 5px;
-            }
-
-            .userAccount_btn:hover {
-                background: linear-gradient(90deg, #aaa3db, #f441a5, #ffeb3b, #514f6e);
-                background-size: 400%;
-            }
-
-            .btn-area {
-                cursor: pointer;
-                color: aliceblue;
-                letter-spacing: 2px;
-                text-transform: uppercase;
-                padding: 10px;
-                border-radius: 5px;
-                background: rgb(205, 140, 235);
-                border: aliceblue;
-                margin: 5px;
-                
-            }
-    
-            .btn-area:hover {
-                background: linear-gradient(90deg, #aaa3db, #f441a5, #ffeb3b, #514f6e);
-                background-size: 400%;
             }
 
         }
