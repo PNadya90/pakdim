@@ -53,7 +53,7 @@ export class LoginComponent extends Unsubscriber  implements OnInit {
           this.noUser = true;
         }
         else {
-          this.loggBtnService.setLogIn(true)
+          this.loggBtnService.setLogIn(true);
           this.router.navigate(['../kino'])
         }
       },
