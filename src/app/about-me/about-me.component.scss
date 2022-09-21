@@ -22,20 +22,20 @@
     }
 }
 
-@media all and (max-width:750px) {
+@media all and (max-width:950px) {
     .about-me {
         .photo {
             display: block;
-            min-height: 450px;
+            height: 520px;
         }
     }
 }
 
-@media all and (max-width:500px) {
+@media all and (max-width:750px) {
     .about-me {
         .photo {
             display: block;
-            height: 250px;
+            height: 400px;
         }
     }
 }
@@ -44,6 +44,7 @@
     .about-me {
         .photo {
             display: none;
+            min-height: 150px;
         }
     }
 }

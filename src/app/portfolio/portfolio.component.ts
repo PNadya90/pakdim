@@ -12,10 +12,7 @@ export class PortfolioComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  goto(url:any, absolute?:boolean){
-    if(absolute){
-      window.window.location.href = url;
-    }
-    this.router.navigateByUrl(url);  
+  goto(url:any){
+    window.open(url, '_blank');
   }
 }
