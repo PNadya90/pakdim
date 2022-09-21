@@ -10,7 +10,6 @@
     In our web site you can find your favourite films and some new ones.
   </p>
   <br>
-  <br>
   <div class="table-area" *ngIf="tableItem?.length>0">
     <div class="filmsTable">
       <div class="table-head">
@@ -18,8 +17,8 @@
         <div> Information </div>
         <div> Year </div>
       </div>
-      <div *ngFor="let item of tableItem" class="tableItem">
-        <div class="poster-area">
+      <div *ngFor="let item of tableItem" class="tableItem" >
+        <div class="poster-area" [routerLink]="'/kino/filmDescription/'+item.imdbID">
           <app-films-info [item]="item">
           </app-films-info>
           <img class="poster" src={{item.Poster}} style="width:150px" (error)="onErr($event)">

@@ -1,85 +1,91 @@
+.search-area {
+    margin: 5%;
+}
 .content {
     text-align: center;
+    h1 {
+        font-size: 50px;
+        color: aliceblue;
+    }
+
+    p {
+        color: aliceblue;
+        font-size: 20px;
+    }
+
+    .table-area {
+        display: flex;
+        justify-content: center;
+
+        .filmsTable {
+            width: 70%;
+            .table-head {
+                background-color: rgb(205, 140, 235);
+                color: #fafafa;
+                font-weight: 150;
+                text-transform: uppercase;
+                display: flex;
+                justify-content: space-between;
+                height: 70px;
+                align-items: center;
+                padding: 0 3%;
+                border-radius: 15px 15px 0 0;
+            }
+
+            .tableItem {
+                background-color: #fafafa;
+                display: flex;
+                justify-content: space-between;
+                padding: 0 3%;
+                align-items: center;
+                padding: 3%;
+            }
+
+            .tableItem:nth-child(even) {
+                background-color: #eeeeee;
+            }
+
+            .heart {
+                cursor: pointer;
+                width: 22px;
+                stroke: red;
+                stroke-width: 40px;
+            }
+
+            .like {
+                position: absolute;
+                bottom: 0px;
+                left: 120px;
+                fill: white;
+            }
+
+            .like :hover {
+                fill: red;
+                stroke: red;
+            }
+
+            .likedF {
+                fill: red;
+                stroke: red;
+            }
+
+            .poster-area {
+                position: relative;
+                width: 150px;
+                cursor: pointer;
+            }
+        }
+    }
 }
 
-h1 {
-    font-size: 50px;
-    color: aliceblue;
-}
-
-p {
-    margin: auto;
-    line-height: 1.4em;
-    color: aliceblue;
-    font-size: 20px;
-}
-
-.search-area {
-    margin: 70px;
-}
-
-.table-area {
-    margin: 70px;
-    display: grid;
-    margin-bottom: 0;
-    padding-bottom: 70px;
-}
-
-.filmsTable {
-    border-radius: 12px;
-}
-
-td,
-th {
-    padding: 15px 20px;
-    text-align: center;
-}
-
-th {
-    background-color: rgb(205, 140, 235);
-    color: #fafafa;
-    font-weight: 150;
-    text-transform: uppercase;
-
-}
-
-tr {
-    background-color: #fafafa;
-}
-
-tr:nth-child(even) {
-    background-color: #eeeeee;
-}
-
-.heart {
-    cursor: pointer;
-    width: 22px;
-    stroke: red;
-    stroke-width: 40px;
-    
-}
-
-.like {
-    position: absolute;
-    bottom: 0px;
-    left: 120px;
-    fill: white;
-}
-
-.like :hover {
-    fill: red;
-    stroke: red;
-}
-
-.likedF {
-    fill: red;
-    stroke: red;
-
-}
-
-.poster-area {
-    position: relative;
-    width: 150px;
-    cursor: pointer;
-
+@media screen and (max-width: 500px) {
+    .content {
+        .table-area {
+            margin: 0;
+            .filmsTable {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
 }

@@ -23,8 +23,8 @@ color: black;
 .btn-area{
     cursor: pointer;
     color: aliceblue;
-    font-size: 14px;
-    letter-spacing: 2px;
+    font-size: 12px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     padding: 10px;
     border-radius: 5px;
@@ -40,4 +40,17 @@ p{
 .logged{
     color: aliceblue;
     font-size: 20px;
+}
+
+@media screen and (max-width: 335px) {
+    .btn-area{
+        cursor: pointer;
+        color: aliceblue;
+        font-size: 7px;
+        text-transform: uppercase;
+        padding: 10px;
+        border-radius: 5px;
+        background: rgb(205, 140, 235);
+    
+    }
 }

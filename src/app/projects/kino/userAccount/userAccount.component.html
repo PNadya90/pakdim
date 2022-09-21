@@ -3,7 +3,7 @@
     <div *ngFor="let item of userFilms" class="film-area">
         <app-films-info [item]="item">
         </app-films-info>
-        <img src={{item.Poster}} class="poster" (error)="onErr($event)">
+        <img src={{item.Poster}} class="poster" (error)="onErr($event)" [routerLink]="'/kino/filmDescription/'+item.imdbID">
         <a class="like" (click)="likeFilm(item?.imdbID)">
             <svg class="heart" [ngClass]="{'empty': !item.isLiked }" viewBox="-5 0 523 512">
                 <path
