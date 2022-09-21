@@ -4,7 +4,7 @@
 
     .photo {
         width: 60%;
-        height: 250px;
+        height: 400px;
         background: url("/assets/Photo_blue.jpg");
         background-size: cover;
         background-position: top;
@@ -27,6 +27,23 @@
         .photo {
             display: block;
             min-height: 450px;
+        }
+    }
+}
+
+@media all and (max-width:500px) {
+    .about-me {
+        .photo {
+            display: block;
+            height: 250px;
+        }
+    }
+}
+
+@media all and (max-width:320px) {
+    .about-me {
+        .photo {
+            display: none;
         }
     }
 }
