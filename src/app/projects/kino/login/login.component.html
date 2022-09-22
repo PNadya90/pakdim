@@ -1,5 +1,5 @@
 <div>
-    <div>
+    <div class="login-area">
         <h2>
             Please enter your login and password and enjoy your favourite films:
         </h2>
@@ -18,7 +18,7 @@
                 <button type="submit" class="btn btn-light" >Log in</button>
                 <p *ngIf="noUser">No such user. You can create a new one.</p>
                 <hr style="color: aliceblue">
-                <a class="btn-area" (click)="newUser = !newUser">Create new user</a>
+                <button class="btn-create" type="button" (click)="newUser = !newUser">Create new user</button>
             </form>
         </div>
     </div>

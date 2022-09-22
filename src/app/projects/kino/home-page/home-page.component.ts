@@ -111,5 +111,8 @@ export class HomePageComponent extends Unsubscriber implements OnInit{
       }
     });
   }
+  openFilmInfo(url:any){
+    window.open(url, '_blank');
+  }
 }
 

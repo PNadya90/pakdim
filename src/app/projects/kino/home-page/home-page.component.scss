@@ -3,6 +3,7 @@
 }
 .content {
     text-align: center;
+    margin: 5%;
     h1 {
         font-size: 50px;
         color: aliceblue;
@@ -16,7 +17,7 @@
     .table-area {
         display: flex;
         justify-content: center;
-
+        padding-bottom:3%;
         .filmsTable {
             width: 70%;
             .table-head {

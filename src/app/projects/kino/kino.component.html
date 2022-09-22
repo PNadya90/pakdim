@@ -1,10 +1,12 @@
 <div class="content-area">
   <header>
-    <img src="\assets\img\kino.jpg" alt="" class="logo" routerLink="/kino">
+    <div class="logo-area">
+      <img src="\assets\img\kino.jpg" alt="" class="logo" routerLink="/kino">
+    </div>
     <nav class="nav-area">
       <button routerLink="/kino" class="btn"> <i class="bi bi-house-fill"></i> Home</button>
       <button class="btn" *ngIf="loggBtnService.isLoggedIn" routerLink="./userAccount"><i
-          class="bi bi-person-video2"></i>User account</button>
+          class="bi bi-person-video2"></i>Account</button>
       <button class="btn" *ngIf="!loggBtnService.isLoggedIn" [routerLink]="'./login'"> <i
           class="bi bi-box-arrow-in-right"></i>Login</button>
 

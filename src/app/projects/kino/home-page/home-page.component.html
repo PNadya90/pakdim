@@ -18,10 +18,10 @@
         <div> Year </div>
       </div>
       <div *ngFor="let item of tableItem" class="tableItem" >
-        <div class="poster-area" [routerLink]="'/kino/filmDescription/'+item.imdbID">
+        <div class="poster-area" >
           <app-films-info [item]="item">
           </app-films-info>
-          <img class="poster" src={{item.Poster}} style="width:150px" (error)="onErr($event)">
+          <img class="poster" src={{item.Poster}} style="width:150px" (error)="onErr($event)" (click)="openFilmInfo('/kino/filmDescription/'+item.imdbID)">
           <div class="like" (click)="likeFilm(item?.imdbID)">
             <svg class="heart" [ngClass]="{'likedF': item.isLiked }" viewBox="-5 0 523 512">
               <path
