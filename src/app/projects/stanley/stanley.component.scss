@@ -17,8 +17,14 @@
             padding: 0 5px;
         }
     }
-}
+    .info {
 
+        #search1{
+            margin: 1% 5px;
+            width: calc(100% - 10px);
+        }
+    }
+}
 
 .btn-primary1 {
     background-color: blueviolet;
@@ -28,9 +34,7 @@
     margin: 5px 25px;
 }
 
-
-
-@media screen and (max-width:320px) {
+@media screen and (max-width: 320px) {
     .container_1 {
         width: fit-content;
     }
