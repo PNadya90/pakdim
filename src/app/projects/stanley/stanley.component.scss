@@ -1,6 +1,4 @@
 .container_1 {
-    margin: 5px;
-
     .head {
         background-color: blueviolet;
         height: 50px;
@@ -16,19 +14,24 @@
             margin: 10px;
             color: blueviolet;
             border-radius: 5px;
+            padding: 0 5px;
         }
     }
 }
 
-input {
-    margin: 3px;
-}
 
 .btn-primary1 {
     background-color: blueviolet;
     color: aliceblue;
     border-radius: 5px;
+    padding: 0 5px;
+    margin: 5px 25px;
 }
 
 
 
+@media screen and (max-width:320px) {
+    .container_1 {
+        width: fit-content;
+    }
+}
