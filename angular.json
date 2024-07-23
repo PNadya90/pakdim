@@ -112,5 +112,8 @@
       }
     }
   },
-  "defaultProject": "modeList"
+  "defaultProject": "modeList",
+  "cli": {
+    "analytics": "ca805510-e153-4e25-b93d-c6a27dfe34fb"
+  }
 }
