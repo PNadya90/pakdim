@@ -47,7 +47,6 @@
         padding: 3% 10%;
 
         .nav-area {
-            height: 90%;
             width: 60px;
             background-color: white;
             display: flex;
@@ -168,7 +167,7 @@
     }
 }
 
-@media all and (max-height: 500px) {
+@media all and (max-height: 560px) {
     .container-CV {
         .info-area {
             padding: 0;
