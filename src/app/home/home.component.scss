@@ -166,7 +166,14 @@
         }
     }
 }
-
+@media all and (max-height: 620px) {
+    .container-CV {
+        .description-area {
+            font-size: 13px;
+            justify-content: flex-start;
+        }
+    }
+}
 @media all and (max-height: 560px) {
     .container-CV {
         .info-area {
