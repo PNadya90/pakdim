@@ -1,17 +1,26 @@
-<div class="title">
-  <h2>MY PORTFOLIO:</h2>
-</div>
-<div class="portfolio-container">
+<div class="portfolio">
+  <div class="title">
+    <h2>MY PROJECTS:</h2>
+  </div>
   <div class="items-container">
     <div class="items">
+      <div class="img-div-container" (click)="goto('https://pnadya90.github.io/NLPagesNadya/')">
+        <div class="img-div nlp"></div>
+        <div class="item-info">
+          <div class="info">
+            <h3>NLP Project (Angular 18):</h3>
+            <p>
+              The project based on Angular 18. User can insert some Info for example like:
+              Last name, First Name etc in already prepared template.
+            </p>
+          </div>
+        </div>
+      </div>
       <div class="img-div-container">
-        <div class="img-div5"></div>
-        <div
-          class="item-info"
-          (click)="
+        <div class="img-div pokemons"></div>
+        <div class="item-info" (click)="
             goto('http://pakdim-react.s3-website.eu-central-1.amazonaws.com')
-          "
-        >
+          ">
           <div class="info">
             <h3>Pokemon Project (React JS):</h3>
             <p>
@@ -22,31 +31,19 @@
           </div>
         </div>
       </div>
-      <div class="img-div-container" (click)="goto('/ta9')">
-        <div class="img-div2"></div>
-        <div class="item-info">
+      <div class="img-div-container">
+        <div class="img-div casino"></div>
+        <div class="item-info" (click)="goto('https://pnadya90.github.io/baba-test/#/')">
           <div class="info">
-            <h3>Tracking Project:</h3>
+            <h3>Casino Project (Angular 17):</h3>
             <p>
-              The project keep tracking your presense. You can click and check.
-              I hope you will enjoy.
+              The project based on Angular 17. In this project you can try your luck
+              just choose slot "777 burning hot" set some bet and click on spin button
             </p>
           </div>
         </div>
       </div>
-      <div class="img-div-container">
-        <div class="img-div4"></div>
-        <div class="item-info" (click)="goto('/listMode')">
-          <div class="info">
-            <h3>Events Project:</h3>
-            <p>
-              The project helps you to manage some events. You can click and
-              check. I hope you will enjoy.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="img-div-container">
+      <!-- <div class="img-div-container">
         <div class="img-div3"></div>
         <div class="item-info" (click)="goto('/kino')">
           <div class="info">
@@ -58,8 +55,8 @@
             </p>
           </div>
         </div>
-      </div>
-      <div class="img-div-container">
+      </div> -->
+      <!-- <div class="img-div-container">
         <div class="img-div1"></div>
         <div class="item-info" (click)="goto('/stanley')">
           <div class="info">
@@ -70,7 +67,7 @@
             </p>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>
