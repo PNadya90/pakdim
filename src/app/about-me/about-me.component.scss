@@ -4,6 +4,7 @@
     align-items: center;
     height: 100vh;
     padding-top: 11%;
+
     .photo-and-images {
         width: 50%;
         display: flex;
@@ -39,6 +40,13 @@
             }
 
         }
+    }
+
+    @media screen and (max-width: 760px) {
+    .photo-and-images{
+        margin-top: 25px;
+    }
+        
     }
 
     .text-container {
@@ -85,19 +93,22 @@
 @media screen and (max-width: 760px) {
     .about-me {
         flex-direction: column;
-        justify-content: end;
+
         .photo-and-images {
             .wrapper-image {
                 margin: 8px 0;
             }
-            .orbit{
+
+            .orbit {
                 display: none;
             }
         }
+
         .text-container {
             width: 95%;
             height: 60%;
-            .text{
+
+            .text {
                 margin-top: 1rem;
             }
         }
