@@ -19,6 +19,11 @@
                 width: 100%;
                 clip-path: circle();
             }
+
+            .name {
+                display: flex;
+                justify-content: center;
+            }
         }
 
         .orbit {
@@ -42,11 +47,11 @@
         }
     }
 
-    @media screen and (max-width: 760px) {
-    .photo-and-images{
-        margin-top: 25px;
-    }
-        
+    @media screen and (max-width: 770px) {
+        .photo-and-images {
+            margin-top: 25px;
+        }
+
     }
 
     .text-container {
@@ -66,7 +71,22 @@
                 margin: 7% 8%;
                 margin-bottom: unset;
                 color: black;
+                font-size: 14px;
             }
+
+            @media screen and (max-width: 380px) {
+                article {
+                    font-size: 12px;
+                }
+
+            }
+        }
+
+        @media screen and (max-height: 700px) {
+            .text {
+                font-size: 12px;
+            }
+
         }
     }
 
@@ -91,13 +111,13 @@
     }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 770px) {
     .about-me {
         flex-direction: column;
 
         .photo-and-images {
             .wrapper-image {
-                margin: 8px 0;
+                margin-top: 20px;
             }
 
             .orbit {

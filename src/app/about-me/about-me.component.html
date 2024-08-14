@@ -2,6 +2,7 @@
   <div class="photo-and-images">
     <div class="wrapper-image">
       <img src="assets/about-me-imgs/my_photo.jpeg" alt="My Photo">
+      <div class="name">Nadya Pak</div>
     </div>
     <div class="orbit">
       <img *ngFor="let smallImg of smallImages; let i = index" [src]="smallImg" [ngStyle]="getImageStyle(i)">
