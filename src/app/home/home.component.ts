@@ -37,6 +37,6 @@ export class HomeComponent {
     }, 500);
   }
   showCV() {
-    window.open('./assets/NadyaPak_CV.pdf', '_blank');
+    window.open('./assets/nadya_pak2025.pdf', '_blank');
   }
 }

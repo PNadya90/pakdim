@@ -1,5 +1,5 @@
 
-export class clientInfo {
+export interface clientInfo {
     clientId: any;
     clientLocalTime: any;
     screenResolution: any;

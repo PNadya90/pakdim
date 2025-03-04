@@ -15,15 +15,15 @@ import { UserPageComponent } from './projects/ta9/user-page/user-page.component'
 
 const routes: Routes = [
   { path: 'dim', component: DimComponent },
-  { path: 'pak', component: HomeComponent },
-  { path: 'stanley', component: StanleyComponent },
-  {
-    path: 'ta9', component: Ta9Component, children: [
-      { path: '', component: UserPageComponent },
-      { path: 'user', component: UserPageComponent },
-      { path: 'admin', component: AdminPageComponent }
-    ]
-  },
+  { path: 'pak', component: HomeComponent, title: 'Nadya Pak'},
+  // { path: 'stanley', component: StanleyComponent },
+  // {
+  //   path: 'ta9', component: Ta9Component, children: [
+  //     { path: '', component: UserPageComponent },
+  //     { path: 'user', component: UserPageComponent },
+  //     { path: 'admin', component: AdminPageComponent }
+  //   ]
+  // },
   { path: 'listMode', component: AppEventList },
   {
     path: 'kino', component: KinoComponent,

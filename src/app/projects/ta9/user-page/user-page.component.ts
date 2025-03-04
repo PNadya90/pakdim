@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { clientInfo } from '../clientInfo.model';
 import { Ta9Service } from '../ta9.service';
 import { v4 as uuidv4 } from 'uuid';
@@ -24,8 +24,8 @@ export class UserPageComponent implements OnInit {
   screen = window.screen.width + 'x' + window.screen.height;
   timeZone: any = new Date().getTimezoneOffset() / 60 * (-1);
   interval: any;
-
-  constructor(private appService: Ta9Service) { };
+  appService = inject(Ta9Service)
+  constructor() { };
 
   ngOnInit() {
 
